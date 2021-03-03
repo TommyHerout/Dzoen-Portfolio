@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgba(248,248,245,255);
+}
+body {
+  font-family: "Barlow", sans-serif;
+  height: 100%;
+  margin: 0;
+  display: grid;
+
+}
+ main, footer {
+  position: relative;
+  display: grid;
+  height: 100vh;
+  display: flex;
+ }
+
+ main .welcome {
+   width: 30%;
+   position: absolute;
+   top: 50%;
+   left: 25%;
+
+   transform: translate(-50%, -50%);
+ }
+
+ main .welcome h1 {
+   margin-bottom: 10px;
+ }
+
+ main .welcome h3 {
+   margin-bottom: 5px;
+ }
+
+ main .welcome p {
+   margin-top: 30px;
+   padding-right: 100px;
+ }
+
+.welcome-pictures .sharlota {
+  width: 20%;
+  position: absolute;
+  right: 5%;
+  top: 10%;
+}
+
+.welcome-pictures .amco {
+  width: 40%;
+  position: absolute;
+  right: 25%;
+  top: 15%;
+}
+
+.animation {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.paper-plane {
+  height: 200px;
+  top: 50%;
+  left: 0%;
+  position: absolute;
+}
