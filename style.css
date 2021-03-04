@@ -54,6 +54,19 @@ body {
   top: 15%;
 }
 
+.scroll-to-explore {
+  padding-top: 40px;
+  float: left;
+  font-weight: 800;
+  
+}
+
+.mouse {
+  width: 80px;
+  height: auto;
+  padding-top: 10px;
+}
+
 .animation {
   height: 100vh;
   position: relative;
@@ -73,8 +86,51 @@ body {
   height: 700px;
   top: 50%;
   left: 50%;
-  
   position: absolute;
-  
   transform: translate(-50%, -50%);
+}
+
+
+
+#container {
+  background-color:grey;
+  display:flex;
+  flex-wrap:wrap;
+  flex-direction:column;
+  height:100vh;
+}
+
+.module{
+  height:100%;
+  display:flex;
+}
+
+.green{
+  width:100vw;
+  background-color:green;
+}
+
+.yellow{
+  width:100vw;
+  background-color:yellow;
+}
+
+.purple{
+  width:100vw;
+  background-color:purple;
+}
+
+.orange{
+  width:100vw;
+  background-color:purple;
+}
+
+.blue{
+  width:100vw;;
+  background-color:blue;
+}
+
+.red{
+  width:100vw;
+  background-color: rgba(248,248,245,255);
 }

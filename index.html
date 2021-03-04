@@ -28,8 +28,11 @@
           consequat malesuada, massa enim accumsan lacus, vitae aliquet nibh lorem sit
           amet urna. Nunc ex lacus, lobortis ut tempor eget, varius blandit turpis.
         </p>
+        <div class="scroll-to-explore">Scroll to explore</div>
+        <img class="mouse" src="./img/mouse.png">
       </div>
     </main>
+
     <div class="welcome-pictures">
       <img src="./img/girl1.PNG" alt="amco" class="sharlota"/>
       <img src="./img/boy.PNG" alt="sharlota" class="amco"/>
@@ -39,6 +42,15 @@
       <h1 class="art">ART</h1>
       <img class="girl-fading" src="./img/girl.PNG">
     </section>
+
+    <div id="container">
+      <div class="module green"></div>
+      <div class="module yellow"></div>
+      <div class="module purple"></div>
+      <div class="module orange"></div>
+      <div class="module blue"></div>
+      <div class="module red"></div>
+    </div>
 
     <footer>
       <h1>End</h1>
@@ -51,6 +63,8 @@
     <script>
         gsap.from('.under-welcome-text', {opacity: 0, duration: 1, y: -100, stagger: 0})
         gsap.from('.anim1', {opacity: 0, duration: 3, y: -100, stagger: 0})
+        gsap.from('.scroll-to-explore', {opacity: 0, duration: 1, y: -100, stagger: 0})
+        gsap.from('.mouse', {opacity: 0, duration: 1, y: -100, stagger: 0})
         
         gsap.from('.sharlota', {duration: 3, x: 200, opacity: 0})
         gsap.from('.amco', {opacity: 0, duration: 3})
