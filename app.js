@@ -28,21 +28,6 @@ to(".girl-fading", {
 "sameTime")
 .to(".art", {
   opacity: 1},
-"sameTime");
-ScrollTrigger.create({
-  snap: 0.333
-})
+"sameTime")
 
 
-
-const controller = new ScrollMagic.Controller();
-
-const scene = new ScrollMagic.Scene({
-  triggerElement: ".animation",
-  duration: 3000,
-  triggerHook: 0
-})
-.setTween(tween)
-.addIndicators()
-.setPin('.animation')
-.addTo(controller)
