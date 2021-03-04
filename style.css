@@ -61,8 +61,11 @@ body {
 }
 
 .paper-plane {
-  height: 200px;
+  height: 700px;
   top: 50%;
-  left: 0%;
+  left: 50%;
+  
   position: absolute;
+  
+  transform: translate(-50%, -50%);
 }

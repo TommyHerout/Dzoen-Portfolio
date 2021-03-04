@@ -1,24 +1,35 @@
 
 gsap.registerPlugin(MotionPathPlugin);
+gsap.registerPlugin(ScrollTrigger);
 
-const tween = gsap.timeline();
-tween.to(".paper-plane", {
-  duration: 6,
-  ease: "power1.inOut",
-  motionPath: {
-    path: [{x: 100, y: -20},
-           {x: 300, y: 10},
-           {x: 500, y: 100},
-           {x: 700, y: -200},
-           {x: 350, y: -50},
-           {x: 600, y: 100},
-           {x: 800, y: 0},
-           {x: window.innerWidth, y: -250}],
+ScrollTrigger.defaults({
+  // Defaults are used by all ScrollTriggers
+  toggleActions: "play none reverse none", // Scoll effect Forward, Leave, Back, Back Leave
+  markers: false, // Easaly remove markers for production.
 
-           autoRotate: true,
-           curviness: 0.5,
-  },
 });
+
+const timelineHeader = gsap.timeline({
+  scrollTrigger: {
+    id: "ZOOM", // Custom label to the marker
+    trigger: ".animation", // What element triggers the scroll
+    scrub: true, // Add a small delay of scrolling and animation. `true` is direct
+    start: "top top", // Start at top of Trigger and at the top of the viewport
+    end: "+=100% 0px", // The element is 500px hight and end 50px from the top of the viewport
+    pin: true, // Pin the element true or false,
+  } });
+
+
+timelineHeader.
+
+to(".paper-plane", {
+  scale: 5,
+opacity: 0 },
+"sameTime");
+
+ScrollTrigger.create({
+  snap: 0.333
+})
 
 const controller = new ScrollMagic.Controller();
 
