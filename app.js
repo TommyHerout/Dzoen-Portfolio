@@ -22,14 +22,18 @@ const timelineHeader = gsap.timeline({
 
 timelineHeader.
 
-to(".paper-plane", {
+to(".girl-fading", {
   scale: 5,
-opacity: 0 },
+  opacity: 0 },
+"sameTime")
+.to(".art", {
+  opacity: 1},
 "sameTime");
-
 ScrollTrigger.create({
   snap: 0.333
 })
+
+
 
 const controller = new ScrollMagic.Controller();
 

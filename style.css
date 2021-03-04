@@ -60,7 +60,16 @@ body {
   overflow: hidden;
 }
 
-.paper-plane {
+.animation .art {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 30em;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
+.girl-fading {
   height: 700px;
   top: 50%;
   left: 50%;
