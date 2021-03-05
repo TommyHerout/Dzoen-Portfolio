@@ -23,7 +23,6 @@ body {
    position: absolute;
    top: 50%;
    left: 25%;
-
    transform: translate(-50%, -50%);
  }
 
@@ -58,7 +57,6 @@ body {
   padding-top: 40px;
   float: left;
   font-weight: 800;
-  
 }
 
 .mouse {
@@ -90,10 +88,7 @@ body {
   transform: translate(-50%, -50%);
 }
 
-
-
 #container {
-  background-color:grey;
   display:flex;
   flex-wrap:wrap;
   flex-direction:column;
@@ -105,32 +100,50 @@ body {
   display:flex;
 }
 
-.green{
-  width:100vw;
-  background-color:green;
+
+.first{
+  width:90vw;
 }
 
-.yellow{
-  width:100vw;
-  background-color:yellow;
+.second{
+  width:80vw;
 }
 
-.purple{
-  width:100vw;
-  background-color:purple;
+.third{
+  width:80vw;
 }
 
-.orange{
-  width:100vw;
-  background-color:purple;
+.fourth{
+  width:90vw;
 }
 
-.blue{
-  width:100vw;;
-  background-color:blue;
+.fifth{
+  width:100vw;
 }
 
-.red{
-  width:100vw;
-  background-color: rgba(248,248,245,255);
+.end{
+  width: 73vw;
+}
+
+.more {
+  height: 100vh;
+  text-align: center;
+}
+
+.more h1{
+  font-size: 5em;
+  padding-bottom: 10%;
+}
+
+.more h3 {
+  padding-bottom: 10%;
+}
+
+footer h1 {
+  width: 30%;
+  position: absolute;
+  top: 20%;
+  left: 25%;
+  font-size: 3em;
+  transform: translate(-50%, -50%);
 }
