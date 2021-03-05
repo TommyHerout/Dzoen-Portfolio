@@ -1,3 +1,28 @@
+const modal = document.querySelector(".modal");
+const previews = document.querySelectorAll(".gallery img, .gallery2 img");
+const original = document.querySelector(".full-img");
+const caption = document.querySelector(".caption");
+
+previews.forEach(preview => {
+    preview.addEventListener('click', () => {
+        modal.classList.add("open");
+
+
+        const originalSrc = preview.getAttribute('data-original');
+        original.src = `./img/${originalSrc}`;
+
+        const altText = preview.alt;
+        caption.textContent = altText;
+    });
+});
+
+
+modal.addEventListener("click", (e) => {
+    if(e.target.classList.contains('modal')) {
+        modal.classList.remove("open");
+    }
+});
+
 const navSlide = () => {
     const burger = document.querySelector('.burger');
     const nav = document.querySelector('.nav-links');
