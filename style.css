@@ -138,16 +138,17 @@ body {
 .more {
   height: 100vh;
   text-align: center;
+  display: inline;
 }
 
 .more h1{
   font-size: 5em;
-  padding-bottom: 10%;
+  padding-bottom: 25vh;
   padding-top: 10%;
 }
 
 .more h3 {
-  padding-bottom: 10%;
+  padding-top: 30px;
 }
 
 footer h1 {

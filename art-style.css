@@ -13,14 +13,11 @@
 }
 
 
-.img-container, .img-container2, .img-container3 {
+.img-container{
     overflow: hidden;
 }
 
-.img-container img,
-.img-container2 img,
-.img-container3 img,
-.img-container4 img{
+.img-container img{
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -28,22 +25,7 @@
     cursor: pointer;
 }
 
-/* .img-container4 img {
-    width: 40%;
-    position: absolute;
-    object-fit: cover;
-    transition: all 0.3s ease-out;
-    left: 50%;
-    transform: translateX(-50%);
-    cursor: pointer;
-} */
-
-
-
-.img-container img:hover,
-.img-container2 img:hover,
-.img-container3 img:hover,
-.img-container4 img:hover{
+.img-container img:hover{
     transform: scale(1.2);
 }
 
@@ -66,7 +48,7 @@
 
 .full-img {
     position: absolute;
-    height: 125%;
+    height: 1000px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0.5);
@@ -83,14 +65,13 @@
     font-weight: bold;
     position: absolute;
     top: 30%;
-    left: 80%;
+    left: 79%;
     transform: translate(-50%, -50%);
 }
 
 .modal p{
     color: white;
     font-size: 1.2rem;
-
     position: absolute;
     top: 40%;
     left: 80%;
@@ -107,13 +88,16 @@ nav {
     background-color:rgb(182, 160, 145);
 }
 
-.logo {
+.logo a {
     color: rgb(0, 0, 0);
     text-transform: uppercase;
     letter-spacing: 5px;
     font-size: 20px;
     font-weight: 900;
+    text-decoration: none;
 }
+
+
 
 .nav-links {
     display: flex;
@@ -146,7 +130,7 @@ nav {
     transition: all 0.3s ease;
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1400px) {
     .modal h1{
         color: white;
         font-size: 2rem;
@@ -174,7 +158,6 @@ nav {
     body, html{
         overflow-x: hidden !important;
     }
-
 
     .nav-links {
         position: absolute;
