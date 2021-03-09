@@ -75,7 +75,6 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  font-size: 30em;
   transform: translate(-50%, -50%);
   opacity: 0;
 }

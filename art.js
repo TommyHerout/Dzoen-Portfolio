@@ -1,7 +1,8 @@
 const modal = document.querySelector(".modal");
-const previews = document.querySelectorAll(".gallery img, .gallery2 img");
+const previews = document.querySelectorAll(".gallery img, .gallery2 img, .gallery3 img");
 const original = document.querySelector(".full-img");
 const caption = document.querySelector(".caption");
+const description = document.querySelector(".description");
 
 previews.forEach(preview => {
     preview.addEventListener('click', () => {
@@ -9,10 +10,13 @@ previews.forEach(preview => {
 
 
         const originalSrc = preview.getAttribute('data-original');
-        original.src = `./img/${originalSrc}`;
+        original.src = `./img/illustrations/${originalSrc}`;
+
+        const titleText = preview.title;
+        caption.textContent = titleText;
 
         const altText = preview.alt;
-        caption.textContent = altText;
+        description.textContent = altText;
     });
 });
 
