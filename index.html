@@ -77,9 +77,52 @@
       <a href="/art.html"><h3>INTERIOR</h3></a>
     </section>
 
-    <footer class="contact">
-      <h1>Let's talk</h1>
-    </footer>
+    
+    
+    <div class="contact-me">
+      <h1>
+        Let's talk
+      </h1>
+      <form class="contact-form" action="index.html" method="POST">
+        <div class="one">
+          <input type="text" class="contact-name" name="first-name" autocomplete="off" required>
+          <label for="first-name" class="label"></label>
+            <span class="content-first-name">Name</span>
+        </div>
+
+        <div class="two">
+          <input type="text" class="contact-surname" name="surname" autocomplete="off" required>
+        <label for="surname" class="label"></label>
+            <span class="content-surname">Surname</span>
+        </div>
+        <div class="three">
+          
+        <input type="email" class="contact-email" name="email" autocomplete="off" required>
+        <label for="email" class="label"></label>
+            <span class="content-email">Email</span>
+        </div>
+
+        <div class="four">
+        <textarea class="contact-message" name="message" required autocomplete="off" maxlength="350"></textarea>
+        <label for="message" class="label"></label>
+            <span class="content-message">Message</span>
+        </div>
+
+        <input type="submit" class="contact-form-button" value="Send">
+      </form>
+    </div>
+
+
+    <div class="social-media">
+      <a href="https://www.twitter.com"><img src="img/social-media/twitter-32.ico" height="25" width="25" class="logo"></a>
+      <a href="https://www.instagram.com"><img src="img/social-media/instagram.png" height="25" width="25" class="logo"></a>
+      <a href="https://www.behance.net"><img src="img/social-media/behance-32.ico" height="25" width="25" class="logo"></a>
+      <a href="https://www.linkedin.com"><img src="img/social-media/linkedin-3-32.ico" height="25" width="25" class="logo"></a>
+    </div>
+
+    <footer>
+      <p>© 2021 Johana Rubešová</p>
+  </footer>
 
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
     <script>

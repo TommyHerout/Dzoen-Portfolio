@@ -45,3 +45,50 @@ gsap.to(container, {
   }
 })
 
+
+
+
+placeholder_input_one = document.querySelector('.contact-name');
+placeholder_label_one = document.querySelector('.one > span');
+
+placeholder_input_two = document.querySelector('.contact-surname');
+placeholder_label_two = document.querySelector('.two > span');
+
+placeholder_input_three = document.querySelector('.contact-email');
+placeholder_label_three = document.querySelector('.three > span');
+
+placeholder_input_four = document.querySelector('.contact-message');
+placeholder_label_four = document.querySelector('.four > span');
+
+
+placeholder_input_one.onchange = function() {
+  if (placeholder_input_one.value !== '') {
+      placeholder_label_one.style.transform = 'translateY(-350%)' ;
+  } else {
+      placeholder_label_one.style.transform = '';
+  }  
+}
+
+placeholder_input_two.onchange = function() {
+  if (placeholder_input_two.value !== '') {
+      placeholder_label_two.style.transform = 'translateY(-350%)' ;
+  } else {
+      placeholder_label_two.style.transform = '';
+  }  
+}
+
+placeholder_input_three.onchange = function() {
+  if (placeholder_input_three.value !== '') {
+      placeholder_label_three.style.transform = 'translateY(-350%)' ;
+  } else {
+      placeholder_label_three.style.transform = '';
+  }  
+}
+
+placeholder_input_four.onchange = function() {
+  if (placeholder_input_four.value !== '') {
+      placeholder_label_four.style.transform = 'translateY(-570%)' ;
+  } else {
+      placeholder_label_four.style.transform = '';
+  }  
+}
