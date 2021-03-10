@@ -151,22 +151,43 @@ body {
   padding-top: 30px;
 }
 
+
+.contact-me {
+  position: relative;
+  width: 100%;
+  min-height: 80vh;
+  padding: 2rem;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .contact-me h1 {
   position: absolute;
-  top: 25%;
+  top: 20%;
   right: 50%;
   font-size: 4em;
   transform: translate(50%, -50%);
 }
 
 
-.contact-form {
-  position: absolute;
-  top: 65%;
-  right: 50%;
-  transform: translate(50%, -50%);
+.form .one, .two, .three, .four{
+  transform: translateX(110%);
+  width: 100px;
 }
 
+.contact-form {
+  width: 100%;
+  max-width: 60vw;
+  height: 45vh;
+  border-radius: 10px;
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  
+}
 span{
   position:absolute;
 }
@@ -177,7 +198,7 @@ span{
 .contact-email,
 .contact-message {
   display: block;
-  width: 40vw;
+  width: 20vw;
   box-sizing: border-box;
   margin: 16px 0;
   padding-top: 40px;
@@ -220,7 +241,6 @@ span{
 
 
 .contact-form-button {
-  float: right;
   border: 0;
   background: rgb(182, 160, 145);
   color: white;
@@ -228,6 +248,8 @@ span{
   border-radius: 20px;
   cursor: pointer;
   transition: 0.5s;
+  
+  margin-left: 13vw;
 }
 
 .contact-form-button:hover{
@@ -236,11 +258,72 @@ span{
 
 .social-media{
   text-align: center;
+  margin-top: 50px;
 }
 
  .logo {
   margin-left: 25px;
   margin-right: 25px;
+}
+
+.about-me h2 {
+  transform: translate(4vw, 4vh);
+  font-size: 2rem;
+}
+
+.about-me .about-me-one{
+  transform: translate(4vw, 8vh);
+  width: 450px;
+}
+
+.about-me .about-me-two{
+  transform: translate(10vw, 12vh);
+  width: 330px;
+
+}
+
+.about-me-pic img {
+  transform: translate(-60%, -30%);
+  position: relative;
+  z-index: 9999;
+}
+
+@media screen and (max-width: 1600px) {
+  .about-me-pic img {
+    transform: translate(-60%, -45%);
+    position: relative;
+    z-index: 9999;
+    width: 320px;
+  }
+  .contact-me h1 {
+    position: absolute;
+    top: 22%;
+    right: 50%;
+    font-size: 3em;
+    transform: translate(50%, -40%);
+  }
+
+  
+.about-me h2 {
+  transform: translate(2vw, 4vh);
+  font-size: 2rem;
+}
+  .about-me .about-me-one{
+    transform: translate(2vw, 8vh);
+    width: 400px;
+  }
+  
+  .about-me .about-me-two{
+    transform: translate(10vw, 12vh);
+    width: 300px;
+  
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .about-me-pic img {
+    opacity: 0;
+  }
 }
 
 footer{
