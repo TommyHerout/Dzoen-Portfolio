@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   background-color: rgba(248,248,245,255);
+  scroll-behavior: smooth;
 }
 body {
   font-family: "Barlow", sans-serif;
@@ -15,8 +16,11 @@ body {
   position: relative;
   display: grid;
   height: 100vh;
-
  }
+
+ /* h1, h2, h3, h4, h5, h6 {
+   font-weight: 200;
+ } */
 
  main .welcome {
    width: 30%;
@@ -135,21 +139,87 @@ body {
 
 }
 
-.more {
-  height: 100vh;
+.illustrations {
+  grid-row: 0/1;
+  position: relative;
+}
+.art {
+  grid-row: 0/1;
+  position: relative;
+}
+
+.logos {
+  grid-row: 0/1;
+  position: relative;
+}
+
+.interior {
+  grid-row: 0/1;
+  position: relative;
+}
+
+.sections {
+  position: relative;
+}
+
+.sections p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  background-color: transparent;
+  font-weight: bold;
+  z-index: 9999;
+  opacity: 0;
+  transition: all .3s;
+  color:  #5e4c3f;
+}
+
+
+.wanna {
+  font-size: 4rem;
   text-align: center;
-  display: inline;
+  margin-bottom: 8rem;
 }
 
-.more h1{
-  font-size: 5em;
-  padding-bottom: 25vh;
-  padding-top: 10%;
+
+.more {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap:20px;
+  align-items: center;
+  justify-items: center;
+  margin-bottom: 2rem;
 }
 
-.more h3 {
-  padding-top: 30px;
+
+.sections img{
+  width: 300px;
+  height: 300px;
+  transition: all .3s;
 }
+
+
+.sections:hover img {
+  filter: blur(5px);
+  box-shadow: 8px 8px 20px rgb(182, 160, 145);
+}
+
+.sections:hover p {
+  opacity: 1;
+}
+
+.more img {
+  box-shadow: 10px 10px 20px rgb(182, 160, 145);
+}
+
+
+
+
+
+
+
 
 
 .contact-me {
