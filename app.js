@@ -3,14 +3,22 @@ gsap.registerPlugin(MotionPathPlugin);
 gsap.registerPlugin(ScrollTrigger);
 
 
-setTimeout(
-  function(){
-      if ( !localStorage["reloaded"] ){
-          localStorage["reloaded"] = true
-          location.reload()
-      }
-  }, 3000
-)
+// setTimeout(
+//   function(){
+//       if ( !localStorage["reloaded"] ){
+//           localStorage["reloaded"] = true
+//           location.reload()
+//       }
+//   }, 3000
+// )
+
+window.onload = function() {
+  if(!window.location.hash) {
+      window.location = window.location + '#loaded';
+      window.location.reload();
+  }
+}
+
 
 ScrollTrigger.defaults({
   // Defaults are used by all ScrollTriggers
