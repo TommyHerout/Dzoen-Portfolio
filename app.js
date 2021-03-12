@@ -32,7 +32,7 @@ to(".girl-fading", {
 
 
 let container = document.getElementById("container");
-
+console.log(container.scrollWidth - document.documentElement.clientWidth)
 gsap.to(container, {
   x: () => -(container.scrollWidth - document.documentElement.clientWidth) + "px",
   ease: "none",
