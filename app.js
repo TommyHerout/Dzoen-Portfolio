@@ -3,15 +3,6 @@ gsap.registerPlugin(MotionPathPlugin);
 gsap.registerPlugin(ScrollTrigger);
 
 
-// setTimeout(
-//   function(){
-//       if ( !localStorage["reloaded"] ){
-//           localStorage["reloaded"] = true
-//           location.reload()
-//       }
-//   }, 3000
-// )
-
 window.onload = function() {
   if(!window.location.hash) {
       window.location = window.location + '#loaded';
@@ -41,13 +32,22 @@ const timelineHeader = gsap.timeline({
 timelineHeader.
 
 to(".girl-fading", {
-  scale: 5,
-  opacity: 0 },
+  opacity: 0,
+  scale: 3  },
 "sameTime")
-.to(".art", {
+
+.to(".interior", {
   opacity: 1},
 "sameTime")
 
+.to(".interior", {
+  opacity: 0,
+scale: 3},
+"after")
+
+.to(".art", {
+  opacity: 1},
+"after")
 
 let container = document.getElementById("container");
 console.log(container.scrollWidth - document.documentElement.clientWidth)

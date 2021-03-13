@@ -1,0 +1,28 @@
+{
+  "name": "dzoennew",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "scrollmagic": "^2.0.8"
+  },
+  "devDependencies": {
+    "concurrently": "^6.0.0",
+    "http-server": "^0.12.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run open",
+    "open": "concurrently \"http-server -a localhost -p 1234\" \"open http://localhost:1234/build\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TommyHerout/Dzoen-Portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TommyHerout/Dzoen-Portfolio/issues"
+  },
+  "homepage": "https://github.com/TommyHerout/Dzoen-Portfolio#readme"
+}
