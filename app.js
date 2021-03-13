@@ -3,14 +3,6 @@ gsap.registerPlugin(MotionPathPlugin);
 gsap.registerPlugin(ScrollTrigger);
 
 
-window.onload = function() {
-  if(!window.location.hash) {
-      window.location = window.location + '#loaded';
-      window.location.reload();
-  }
-}
-
-
 ScrollTrigger.defaults({
   // Defaults are used by all ScrollTriggers
   toggleActions: "play none reverse none", // Scoll effect Forward, Leave, Back, Back Leave
