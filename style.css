@@ -15,11 +15,11 @@ body {
   display: grid;
   overflow-x: hidden;
 }
- main, .contact-me {
+ main{
   position: relative;
   display: grid;
   height: 100vh;
-  margin-bottom: 10vh;
+  
  }
 
 
@@ -242,8 +242,8 @@ body {
 .contact-me {
   position: relative;
   width: 100%;
-  min-height: 80vh;
-  padding: 2rem;
+  min-height: 100vh;
+padding: 2rem;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -256,6 +256,8 @@ body {
   right: 50%;
   font-size: 4em;
   transform: translate(50%, -50%);
+  background-color: transparent;
+  
 }
 
 
@@ -305,25 +307,25 @@ span{
 .content-surname,
 .content-email,
 .content-message {
-  transform: translateY(-40px);
+  transform: translateY(-45px);
   transition: all 0.3s ease;
 }
 
 .one:focus-within .content-first-name {
-  transform: translateY(-350%);
+  transform: translateY(-300%);
 
 }
 
 .two:focus-within .content-surname {
-  transform: translateY(-350%);
+  transform: translateY(-300%);
 }
 
 .three:focus-within .content-email {
-  transform: translateY(-350%);
+  transform: translateY(-300%);
 }
 
 .four:focus-within .content-message {
-  transform: translateY(-570%);
+  transform: translateY(-500%);
 }
 
 
@@ -370,14 +372,15 @@ span{
 }
 
 .about-me-pic img {
-  transform: translate(-60%, -30%);
+  transform: translate(-50%, -25%);
   position: relative;
   z-index: 9999;
+  width: 300px;
 }
 
 @media screen and (max-width: 1600px) {
   .about-me-pic img {
-    transform: translate(-60%, -45%);
+    transform: translate(-60%, -100%);
     position: relative;
     z-index: 9999;
     width: 320px;
@@ -390,11 +393,11 @@ span{
     transform: translate(50%, -40%);
   }
 
-  
-.about-me h2 {
+  .about-me h2 {
   transform: translate(2vw, 4vh);
   font-size: 2rem;
-}
+  }
+
   .about-me .about-me-one{
     transform: translate(2vw, 8vh);
     width: 400px;
@@ -403,8 +406,15 @@ span{
   .about-me .about-me-two{
     transform: translate(10vw, 12vh);
     width: 300px;
-  
   }
+
+  .about-me-pic img {
+    transform: translate(-55%, -50%);
+    position: relative;
+    z-index: 9999;
+    width: 250px;
+  }
+
 }
 
 @media screen and (max-width: 1300px) {
@@ -417,5 +427,4 @@ footer{
   text-align: center;
   padding-top: 20px;
   padding-bottom: 20px;
-
 }
