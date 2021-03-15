@@ -40,7 +40,10 @@ scale: 3},
 
 .to(".art", {
   opacity: 1},
-"after");
+"after")
+.to(".art", {
+  y:200
+})
 
 let container = document.getElementById("container");
 console.log(container.scrollWidth - document.documentElement.clientWidth)

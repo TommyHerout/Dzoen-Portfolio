@@ -325,7 +325,7 @@ body {
     }
 
     .animation .art-des {
-      top: 350px;
+      top: 200px;
       left: 0;
       z-index: 1;
       width: 80vw;
@@ -336,7 +336,7 @@ body {
     }
 
     .animation .art {
-      top: 350px;
+      top: 250px;
       left: -4%;
       width: 100vw;
       height: 100vw;
