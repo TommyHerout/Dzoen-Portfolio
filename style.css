@@ -316,7 +316,7 @@ body {
   
     .animation .girl-fading {
       top: 150px;
-      left: -9%;
+      left: -12%;
       z-index: 1;
       width: 120vw;
       height: 120vw;
@@ -359,12 +359,6 @@ body {
     main {
       height: 100vh;
     }
-
-
-
-
-  
-
     }
 
 #container {
@@ -452,10 +446,10 @@ body {
 
   .sections-mobile.a {
     opacity: 0;
-    -moz-transition: all 2000ms linear;
-    -webkit-transition: all 2000ms linear;
-    -o-transition: all 2000ms linear;
-    transition: all 2000ms linear;
+    -moz-transition: all 1000ms linear;
+    -webkit-transition: all 1000ms linear;
+    -o-transition: all 1000ms linear;
+    transition: all 1000ms linear;
     -moz-transform: translate3d(-200px, 0px, 0px);
     -webkit-transform: translate3d(-200px, 0px, 0px);
     -o-transform: translate(-200px, 0px);
@@ -465,10 +459,10 @@ body {
 
   .sections-mobile.b {
     opacity: 0;
-    -moz-transition: all 2000ms linear;
-    -webkit-transition: all 2000ms linear;
-    -o-transition: all 2000ms linear;
-    transition: all 2000ms linear;
+    -moz-transition: all 1000ms linear;
+    -webkit-transition: all 1000ms linear;
+    -o-transition: all 1000ms linear;
+    transition: all 1000ms linear;
     -moz-transform: translate3d(200px, 0px, 0px);
     -webkit-transform: translate3d(200px, 0px, 0px);
     -o-transform: translate(200px, 0px);

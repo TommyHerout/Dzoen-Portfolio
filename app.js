@@ -7,7 +7,7 @@ gsap.registerPlugin(ScrollTrigger);
 ScrollTrigger.defaults({
   // Defaults are used by all ScrollTriggers
   toggleActions: "play none reverse none", // Scoll effect Forward, Leave, Back, Back Leave
-  markers: true, // Easaly remove markers for production.
+  markers: false, // Easaly remove markers for production.
 
 });
 
@@ -60,7 +60,7 @@ if(window.innerWidth > 800){
       invalidateOnRefresh: true,
       pin: true,
       scrub: 2,
-      markers: true,
+      markers: false,
       end: () => "+=400% 0px"
     }
   })
