@@ -28,11 +28,11 @@ to(".girl-fading", {
   scale: 3  },
 "sameTime")
 
-.to(".interior", {
+.to(".art-des", {
   opacity: 1},
 "sameTime")
 
-.to(".interior", {
+.to(".art-des", {
   opacity: 0,
 scale: 3},
 "after")

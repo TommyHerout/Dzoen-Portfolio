@@ -16,7 +16,7 @@ body {
  main {
   position: relative;
   display: grid;
-  height: 100vh;
+  height: 120vh;
  }
 
  main .welcome {
@@ -43,6 +43,7 @@ body {
    margin-top: 30px;
    padding-right: 100px;
  }
+
 
 .welcome-pictures .sharlota {
   width: 20%;
@@ -167,20 +168,23 @@ body {
 }
 
 .animation .art {
+  top: 100px;
+  left: 0;
+
+  width: 40vw;
+  height: 40vw;
+  margin: 0 calc(100vw / 10 * 3);
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   opacity: 0;
 }
 
-.animation .interior {
-  top: 20%;
+.animation .art-des {
+  top: 100px;
   left: 0;
   z-index: 1;
-  width: 30vw;
-  height: 30vw;
-  margin: 0 calc(100vw / 10.5 * 3);
+  width: 40vw;
+  height: 40vw;
+  margin: 0 calc(100vw / 10 * 3);
   position: absolute;
   opacity: 0;
 }
@@ -195,7 +199,147 @@ body {
   position: absolute;
 }
 
+@media screen and (max-width: 1700px){
+  
+  .animation .art {
+    top: 7%;
+    left: 0;
+  
+    width: 40vw;
+    height: 40vw;
+    margin: 0 calc(100vw / 10 * 3);
+    position: absolute;
+    opacity: 0;
+  }
+  
+  .animation .art-des {
+    top: 7%;
+    left: 0;
+    z-index: 1;
+    width: 40vw;
+    height: 40vw;
+    margin: 0 calc(100vw / 10 * 3);
+    position: absolute;
+    opacity: 0;
+  }
+  
+  .animation .girl-fading {
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 50vw;
+    height: 50vw;
+    margin: 0 calc(100vw / 12 * 3);
+    position: absolute;
+  }
+  
+  
+  }
 
+@media screen and (max-width: 1500px){
+  
+.animation .girl-fading {
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 70vw;
+  height: 70vw;
+  margin: 0 calc(100vw / 20 * 3);
+  position: absolute;
+}
+
+.animation .art-des {
+  top: 7%;
+  left: 0;
+  z-index: 1;
+  width: 50vw;
+  height: 50vw;
+  margin: 0 calc(100vw / 12 * 3);
+  position: absolute;
+  opacity: 0;
+}
+
+.animation .art {
+  top: 7%;
+  left: 0;
+  width: 40vw;
+  height: 40vw;
+  margin: 0 calc(100vw / 10 * 3);
+  position: absolute;
+  opacity: 0;
+}
+
+
+}
+
+@media screen and (max-width: 1200px){
+  
+  .animation .girl-fading {
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 80vw;
+    height: 80vw;
+    margin: 0 calc(100vw / 40 * 3);
+    position: absolute;
+  }
+  .animation .art-des {
+    top: 200px;
+    left: 0;
+    z-index: 1;
+    width: 50vw;
+    height: 50vw;
+    margin: 0 calc(100vw / 12 * 3);
+    position: absolute;
+    opacity: 0;
+  }
+
+  .animation .art {
+    top: 150px;
+    left: 0;
+    width: 60vw;
+    height: 60vw;
+    margin: 0 calc(100vw / 15 * 3);
+    position: absolute;
+    opacity: 0;
+  }
+  
+  }
+
+  @media screen and (max-width: 800px){
+  
+    .animation .girl-fading {
+      top: 0;
+      left: -9%;
+      z-index: 1;
+      width: 120vw;
+      height: 120vw;
+      margin: 0 calc(100vw / 1000 * 3);
+      position: absolute;
+    }
+
+    .animation .art-des {
+      top: 200px;
+      left: 0;
+      z-index: 1;
+      width: 80vw;
+      height: 80vw;
+      margin: 0 calc(100vw / 40 * 3);
+      position: absolute;
+      opacity: 0;
+    }
+
+    .animation .art {
+      top: 150px;
+      left: -4%;
+      width: 100vw;
+      height: 100vw;
+      margin: 0 calc(100vw / 40 * 3);
+      position: absolute;
+      opacity: 0;
+    }
+
+    }
 
 #container {
   display:flex;
