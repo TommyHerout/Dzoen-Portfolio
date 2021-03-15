@@ -15,13 +15,12 @@ body {
   display: grid;
   overflow-x: hidden;
 }
- main{
+
+ main {
   position: relative;
   display: grid;
   height: 100vh;
-  
  }
-
 
  main .welcome {
    width: 30%;
@@ -82,7 +81,6 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   opacity: 0;
-
 }
 
 .animation .interior {
@@ -120,6 +118,9 @@ body {
   display:flex;
 }
 
+.first img, .second img, .third img, .fourth img, .fifth img, .end img {
+  width: 100vh;
+}
 
 .first{
   width:90vw;
@@ -193,13 +194,11 @@ body {
   color:  #5e4c3f;
 }
 
-
 .wanna {
   font-size: 4rem;
   text-align: center;
   margin-bottom: 8rem;
 }
-
 
 .more {
   display: grid;
@@ -231,19 +230,11 @@ body {
   box-shadow: 10px 10px 20px rgb(182, 160, 145);
 }
 
-
-
-
-
-
-
-
-
 .contact-me {
   position: relative;
   width: 100%;
   min-height: 100vh;
-padding: 2rem;
+  padding: 2rem;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -257,11 +248,9 @@ padding: 2rem;
   font-size: 4em;
   transform: translate(50%, -50%);
   background-color: transparent;
-  
 }
 
-
-.form .one, .two, .three, .four{
+.form .one, .two, .three, .four {
   transform: translateX(110%);
   width: 100px;
 }
@@ -274,13 +263,11 @@ padding: 2rem;
   box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-
-  
 }
-span{
+
+span {
   position:absolute;
 }
-
 
 .contact-name,
 .contact-surname,
@@ -313,7 +300,6 @@ span{
 
 .one:focus-within .content-first-name {
   transform: translateY(-300%);
-
 }
 
 .two:focus-within .content-surname {
@@ -328,7 +314,6 @@ span{
   transform: translateY(-500%);
 }
 
-
 .contact-form-button {
   border: 0;
   background: rgb(182, 160, 145);
@@ -337,7 +322,6 @@ span{
   border-radius: 20px;
   cursor: pointer;
   transition: 0.5s;
-  
   margin-left: 13vw;
 }
 
@@ -368,7 +352,6 @@ span{
 .about-me .about-me-two{
   transform: translate(10vw, 12vh);
   width: 330px;
-
 }
 
 .about-me-pic img {
@@ -385,6 +368,7 @@ span{
     z-index: 9999;
     width: 320px;
   }
+
   .contact-me h1 {
     position: absolute;
     top: 22%;
@@ -414,7 +398,6 @@ span{
     z-index: 9999;
     width: 250px;
   }
-
 }
 
 @media screen and (max-width: 1300px) {

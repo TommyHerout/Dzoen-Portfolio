@@ -17,7 +17,7 @@ const timelineHeader = gsap.timeline({
     scrub: true, // Add a small delay of scrolling and animation. `true` is direct
     start: "top top", // Start at top of Trigger and at the top of the viewport
     end: "+=100% 0px", // The element is 500px hight and end 50px from the top of the viewport
-    pin: true, // Pin the element true or false,
+    pin: true, // Pin the element true or false
   } });
 
 
@@ -54,6 +54,9 @@ gsap.to(container, {
     end: () => "+=" + container.offsetWidth
   }
 })
+
+console.log("HEIGHT " + window.innerHeight);
+console.log("WIDTH " + window.innerWidth);
 
 
 
