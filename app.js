@@ -54,8 +54,9 @@ gsap.to(container, {
     trigger: container,
     invalidateOnRefresh: true,
     pin: true,
-    scrub: 1,
-    end: () => "+=" + container.offsetWidth
+    scrub: 2,
+    markers: true,
+    end: () => "+=400% 0px"
   }
 })
 
