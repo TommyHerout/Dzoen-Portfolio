@@ -1,4 +1,5 @@
 
+
 gsap.registerPlugin(MotionPathPlugin);
 gsap.registerPlugin(ScrollTrigger);
 
@@ -6,7 +7,7 @@ gsap.registerPlugin(ScrollTrigger);
 ScrollTrigger.defaults({
   // Defaults are used by all ScrollTriggers
   toggleActions: "play none reverse none", // Scoll effect Forward, Leave, Back, Back Leave
-  markers: false, // Easaly remove markers for production.
+  markers: true, // Easaly remove markers for production.
 
 });
 
@@ -16,9 +17,9 @@ const timelineHeader = gsap.timeline({
     trigger: ".animation", // What element triggers the scroll
     scrub: true, // Add a small delay of scrolling and animation. `true` is direct
     start: "top top", // Start at top of Trigger and at the top of the viewport
-    end: "+=100% 0px", // The element is 500px hight and end 50px from the top of the viewport
+    end: "+=500% 0px", // The element is 500px hight and end 50px from the top of the viewport
     pin: true, // Pin the element true or false
-    markers: true
+
   } });
 
 
@@ -42,23 +43,36 @@ scale: 3},
   opacity: 1},
 "after")
 .to(".art", {
-  y:200
+  y:100
 })
 
 let container = document.getElementById("container");
+// let containerMobile = document.getElementById("container-mobile");
 console.log(container.scrollWidth - document.documentElement.clientWidth)
-gsap.to(container, {
-  x: () => -(container.scrollWidth - document.documentElement.clientWidth) + "px",
-  ease: "none",
-  scrollTrigger: {
-    trigger: container,
-    invalidateOnRefresh: true,
-    pin: true,
-    scrub: 2,
-    markers: true,
-    end: () => "+=400% 0px"
-  }
-})
+
+
+if(window.innerWidth > 800){
+  gsap.to(container, {
+    x: () => -(container.scrollWidth - document.documentElement.clientWidth) + "px",
+    ease: "none",
+    scrollTrigger: {
+      trigger: container,
+      invalidateOnRefresh: true,
+      pin: true,
+      scrub: 2,
+      markers: true,
+      end: () => "+=400% 0px"
+    }
+  })
+}else{
+  
+}
+
+
+
+
+
+
 
 console.log("HEIGHT " + window.innerHeight);
 console.log("WIDTH " + window.innerWidth);
@@ -110,3 +124,47 @@ placeholder_input_four.onchange = function() {
       placeholder_label_four.style.transform = '';
   }  
 }
+
+
+
+/*Interactivity to determine when an animated element in in view. In view elements trigger our animation*/
+$(document).ready(function() {
+
+  //window and animation items
+  var animation_elements = $.find('.sections-mobile');
+  var web_window = $(window);
+
+  //check to see if any animation containers are currently in view
+  function check_if_in_view() {
+    //get current window information
+    var window_height = web_window.height();
+    var window_top_position = web_window.scrollTop();
+    var window_bottom_position = (window_top_position + window_height);
+
+    //iterate through elements to see if its in view
+    $.each(animation_elements, function() {
+
+      //get the element sinformation
+      var element = $(this);
+      var element_height = $(element).outerHeight();
+      var element_top_position = $(element).offset().top;
+      var element_bottom_position = (element_top_position + element_height);
+
+      //check to see if this current container is visible (its viewable if it exists between the viewable space of the viewport)
+      if ((element_bottom_position >= window_top_position) && (element_top_position <= window_bottom_position)) {
+        element.addClass('in-view');
+      } else {
+        element.removeClass('in-view');
+      }
+    });
+
+  }
+
+  //on or scroll, detect elements in view
+  $(window).on('scroll resize', function() {
+      check_if_in_view()
+    })
+    //trigger our scroll event on initial load
+  $(window).trigger('scroll');
+
+});
