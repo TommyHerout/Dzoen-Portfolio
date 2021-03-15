@@ -157,6 +157,45 @@ body {
 
 }
 
+
+@media screen and (max-width: 1000px){
+  .first, .second, .third, .fourth, .fifth, .end {
+    width: 150vw;
+  }
+}
+
+
+@media screen and (max-width: 595px){
+  .first, .second, .third, .fourth, .fifth, .end {
+    width: 200vw;
+  }
+}
+
+@media screen and (max-width: 450px){
+  .first, .second, .third, .fourth, .fifth, .end {
+    width: 250vw;
+  }
+}
+
+@media screen and (max-width: 375px){
+  .first, .second, .third, .fourth, .fifth, .end {
+    width: 300vw;
+  }
+
+  .first img, .second img, .third img, .fourth img, .fifth img, .end img {
+    position: absolute;
+    width: 375px;
+    height: 375px;
+    top: 438px;
+  }
+
+  .final img {
+    width: 250px;
+    height: 250px;
+    top: 500px;
+  }
+}
+
 .illustrations {
   grid-row: 0/1;
   position: relative;
