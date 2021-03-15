@@ -18,7 +18,7 @@ const timelineHeader = gsap.timeline({
     start: "top top", // Start at top of Trigger and at the top of the viewport
     end: "+=100% 0px", // The element is 500px hight and end 50px from the top of the viewport
     pin: true, // Pin the element true or false
-    markers: false
+    markers: true
   } });
 
 

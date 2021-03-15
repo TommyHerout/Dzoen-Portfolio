@@ -10,7 +10,8 @@ body {
   height: 100%;
   margin: 0;
   display: grid;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
+  width: 100%;
 }
 
  main {
@@ -335,7 +336,7 @@ body {
     }
 
     .animation .art {
-      top: 480px;
+      top: 350px;
       left: -4%;
       width: 100vw;
       height: 100vw;
@@ -343,6 +344,7 @@ body {
       position: absolute;
       opacity: 0;
     }
+
 
     .mobile-text h1{
       display: flex;
@@ -425,6 +427,14 @@ body {
 
 
 @media screen and (max-width: 880px){
+
+  #container {
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:column;
+    height:100vh;
+  }
+
   .first, .second, .third, .fourth, .fifth, .end {
     width: 140vw;
   }
