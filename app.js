@@ -18,6 +18,7 @@ const timelineHeader = gsap.timeline({
     start: "top top", // Start at top of Trigger and at the top of the viewport
     end: "+=100% 0px", // The element is 500px hight and end 50px from the top of the viewport
     pin: true, // Pin the element true or false
+    markers: false
   } });
 
 
@@ -39,7 +40,7 @@ scale: 3},
 
 .to(".art", {
   opacity: 1},
-"after")
+"after");
 
 let container = document.getElementById("container");
 console.log(container.scrollWidth - document.documentElement.clientWidth)
