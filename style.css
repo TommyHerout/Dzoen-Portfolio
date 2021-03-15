@@ -158,24 +158,111 @@ body {
 }
 
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1100px){
   .first, .second, .third, .fourth, .fifth, .end {
     width: 150vw;
   }
 }
 
 
-@media screen and (max-width: 595px){
+@media screen and (max-width: 880px){
   .first, .second, .third, .fourth, .fifth, .end {
-    width: 200vw;
+    width: 140vw;
+  }
+
+  .first img, .second img, .third img, .fourth img, .fifth img, .end img {
+    position: absolute;
+    width: 800px;
+    height: 800px;
+    top: 10%;
+  }
+
+  .final img {
+    width: 250px;
+    height: 250px;
+    top: 500px;
   }
 }
 
-@media screen and (max-width: 450px){
+@media screen and (max-width: 730px){
   .first, .second, .third, .fourth, .fifth, .end {
-    width: 250vw;
+    width: 140vw;
+  }
+
+  .first img, .second img, .third img, .fourth img, .fifth img, .end img {
+
+    width: 700px;
+    height: 700px;
+
+  }
+
+  .final img {
+    width: 250px;
+    height: 250px;
+    top: 500px;
   }
 }
+
+@media screen and (max-width: 650px){
+  .first, .second, .third, .fourth, .fifth, .end {
+    width: 140vw;
+  }
+
+  .first img, .second img, .third img, .fourth img, .fifth img, .end img {
+
+    width: 600px;
+    height: 600px;
+
+  }
+
+  .final img {
+    width: 250px;
+    height: 250px;
+    top: 500px;
+  }
+}
+
+
+@media screen and (max-width: 550px){
+  .first, .second, .third, .fourth, .fifth, .end {
+    width: 140vw;
+  }
+
+  .first img, .second img, .third img, .fourth img, .fifth img, .end img {
+position: absolute;
+    width: 500px;
+    height: 500px;
+    top: 25%;
+  }
+
+  .final img {
+    width: 250px;
+    height: 250px;
+    top: 500px;
+  }
+}
+
+
+@media screen and (max-width: 470px){
+  .first, .second, .third, .fourth, .fifth, .end {
+    width: 140vw;
+  }
+
+  .first img, .second img, .third img, .fourth img, .fifth img, .end img {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    top: 25%;
+  }
+
+  .final img {
+    width: 250px;
+    height: 250px;
+    top: 500px;
+  }
+}
+
+
 
 @media screen and (max-width: 375px){
   .first, .second, .third, .fourth, .fifth, .end {
@@ -186,13 +273,13 @@ body {
     position: absolute;
     width: 375px;
     height: 375px;
-    top: 438px;
+    top: 25%;
   }
 
   .final img {
     width: 250px;
     height: 250px;
-    top: 500px;
+    top: 25%;
   }
 }
 
