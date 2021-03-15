@@ -266,7 +266,7 @@ position: absolute;
 
 @media screen and (max-width: 375px){
   .first, .second, .third, .fourth, .fifth, .end {
-    width: 300vw;
+    width: 150vw;
   }
 
   .first img, .second img, .third img, .fourth img, .fifth img, .end img {
