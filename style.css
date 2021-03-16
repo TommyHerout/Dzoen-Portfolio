@@ -708,10 +708,13 @@ position: absolute;
   background-color: transparent;
 }
 
-.form .one, .two, .three, .four {
-  transform: translateX(110%);
+/* .form .one, .two, .three, .four {
+  transform: translateX(75%);
   width: 100px;
-}
+} */
+
+
+
 
 .contact-form {
   width: 100%;
@@ -741,6 +744,7 @@ span {
   border-bottom: 1px solid silver;
   position: relative;
   resize: none;
+  margin-left: 17%;
 }
 
 .contact-message{
@@ -752,39 +756,44 @@ span {
 .content-surname,
 .content-email,
 .content-message {
-  transform: translateY(-45px);
+  transform: translate(5vw ,-45px);
   transition: all 0.3s ease;
 }
 
 .one:focus-within .content-first-name {
-  transform: translateY(-300%);
+  transform: translate(5vw,-300%);
 }
 
 .two:focus-within .content-surname {
-  transform: translateY(-300%);
+  transform: translate(5vw,-300%);
 }
 
 .three:focus-within .content-email {
-  transform: translateY(-300%);
+  transform: translate(5vw,-300%);
 }
 
 .four:focus-within .content-message {
-  transform: translateY(-400%);
+  transform: translate(5vw,-500%);
 }
 
-.contact-form-button {
+.form{
+  position: relative;
+}
+
+.form .contact-form-button {
   border: 0;
   background: rgb(182, 160, 145);
   color: white;
-  padding: 12px 50px;
+  padding: 12px 40px;
   border-radius: 20px;
   cursor: pointer;
   transition: 0.5s;
   position: absolute;
-  right: 25%;
+  left: 50%;
   transform: translateX(-50%);
-  
+
 }
+
 
 .contact-form-button:hover{
   background: rgb(233, 146, 88);
