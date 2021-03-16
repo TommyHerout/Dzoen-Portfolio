@@ -708,10 +708,10 @@ position: absolute;
   background-color: transparent;
 }
 
-/* .form .one, .two, .three, .four {
-  transform: translateX(75%);
-  width: 100px;
-} */
+.form .one, .two, .three, .four {
+
+  transform: translateY(50%);
+}
 
 
 
@@ -747,10 +747,7 @@ span {
   margin-left: 17%;
 }
 
-.contact-message{
-  padding-top: 80px;
-  line-height: 2ch;
-}
+
 
 .content-first-name,
 .content-surname,
@@ -790,6 +787,7 @@ span {
   transition: 0.5s;
   position: absolute;
   left: 50%;
+  top: 55%;
   transform: translateX(-50%);
 
 }
