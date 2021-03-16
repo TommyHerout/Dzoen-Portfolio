@@ -145,12 +145,12 @@ body {
   }
 
  main .welcome {
-  width: 280px;
+  width: 250px;
   position: absolute;
   top: 20%;
   left: 50vw;
   transform: translate(-50%, -50%);
-  font-size: 15px;
+  font-size: 13px;
 }
 }
 
