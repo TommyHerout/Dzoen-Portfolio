@@ -325,18 +325,18 @@ body {
     }
 
     .animation .art-des {
-      top: 200px;
-      left: 0;
+      top: 250px;
+      left: -2%;
       z-index: 1;
-      width: 80vw;
+      width: 100vw;
       height: 80vw;
-      margin: 0 calc(100vw / 40 * 3);
+      margin: 0 calc(100vw / 1000 * 3);
       position: absolute;
       opacity: 0;
     }
 
     .animation .art {
-      top: 250px;
+      top: 200px;
       left: -4%;
       width: 100vw;
       height: 100vw;
@@ -694,6 +694,10 @@ position: absolute;
   justify-content: center;
 }
 
+.contact-me-mobile{
+  display: none;
+}
+
 .contact-me h1 {
   position: absolute;
   top: 20%;
@@ -855,8 +859,99 @@ span {
 
 @media screen and (max-width: 1300px) {
   .about-me-pic img {
-    opacity: 0;
+    width: 200px;
+    position: absolute;
+    top: 50%;
+    left: 67%;
   }
+
+  .about-me h2{
+    position: absolute;
+    left: 22%;
+  }
+
+  .about-me-two{
+    display: none;
+  }
+
+  .about-me{
+    z-index: 9999;
+  }
+
+  
+.about-me .about-me-one{
+  transform: translate(4vw, 15vh);
+  width: 50%;
+
+}
+
+  .form{
+    display: none;
+  }
+
+  .contact-me h1{
+   position: absolute;
+   top: 20vh;
+  }
+
+
+  .contact-form {
+    width: 100%;
+    max-width: 60vw;
+    height: 45vh;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .form-mobile .one, .two, .three, .four {
+    transform: translateX(270%);
+    width: 100px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .contact-me-mobile {
+    position: relative;
+    width: 100%;
+    min-height: 70vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 50%;
+  }
+
+  .contact-form-mobile {
+    width: 100%;
+    max-width: 60vw;
+    height: 45vh;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .contact-form-button{
+    margin-left: 25vw;
+  }
+
+
+
+
+
+
 }
 
 footer{
