@@ -769,7 +769,7 @@ span {
 }
 
 .four:focus-within .content-message {
-  transform: translateY(-500%);
+  transform: translateY(-400%);
 }
 
 .contact-form-button {
@@ -780,7 +780,10 @@ span {
   border-radius: 20px;
   cursor: pointer;
   transition: 0.5s;
-  margin-left: 13vw;
+  position: absolute;
+  right: 25%;
+  transform: translateX(-50%);
+  
 }
 
 .contact-form-button:hover{
@@ -819,6 +822,14 @@ span {
   width: 300px;
 }
 
+.hit-me-up-mobile{
+  display: none;
+}
+
+.h2-mobile{
+  display: none;
+}
+
 @media screen and (max-width: 1600px) {
   .about-me-pic img {
     transform: translate(-60%, -100%);
@@ -833,11 +844,6 @@ span {
     right: 50%;
     font-size: 3em;
     transform: translate(50%, -40%);
-  }
-
-  .about-me h2 {
-  transform: translate(2vw, 4vh);
-  font-size: 2rem;
   }
 
   .about-me .about-me-one{
@@ -862,9 +868,25 @@ span {
   .about-me-pic img {
     width: 200px;
     position: absolute;
-    top: 50%;
-    left: 67%;
+    top: 22%;
+    left: 68%;
+   
   }
+
+  .contact-me h1{
+    display: none;
+  }
+
+  .about-me .h2-pc {
+    display: none;
+    }
+  
+    .h2-mobile {
+      display: inline-block;
+  
+      transform: translate(1vw, 4vh);
+      font-size: 2rem;
+      }
 
   .about-me h2{
     position: absolute;
@@ -886,9 +908,6 @@ span {
 
 }
 
-  .form{
-    display: none;
-  }
 
   .contact-me h1{
    position: absolute;
@@ -899,58 +918,48 @@ span {
   .contact-form {
     width: 100%;
     max-width: 60vw;
-    height: 45vh;
+    height: 100vh;
     border-radius: 10px;
     box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   }
 
-  .form-mobile .one, .two, .three, .four {
-    transform: translateX(270%);
+  .form .one, .two, .three, .four {
+    transform: translate(15vw, 40%);
     width: 100px;
   }
 
+  .contact-form-button {
+    border: 0;
+    background: rgb(182, 160, 145);
+    color: white;
 
-
-
-
-
-
-
-
-
-
-
-
-  .contact-me-mobile {
-    position: relative;
-    width: 100%;
-    min-height: 70vh;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    bottom: 50%;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+    
+    left: 50%;
+    bottom: 3%;
+    position: absolute;
+    transform: translate(-50% , -50%)
   }
 
-  .contact-form-mobile {
-    width: 100%;
-    max-width: 60vw;
-    height: 45vh;
-    border-radius: 10px;
-    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  .contact-form-button{
-    margin-left: 25vw;
-  }
-
-
-
-
+  .contact-name,
+.contact-surname,
+.contact-email,
+.contact-message {
+  display: block;
+  width: 30vw;
+  box-sizing: border-box;
+  margin: 16px 0;
+  padding-top: 40px;
+  outline: none;
+  border: 0;
+  border-bottom: 1px solid silver;
+  position: relative;
+  resize: none;
+}
 
 
 }
