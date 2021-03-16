@@ -137,7 +137,7 @@ body {
     display: none;
   }
   .welcome-pictures .amco {
-    width: 500px;
+    width: 100vw;
     position: absolute;
     left: 50%;
     top: 35vh;
@@ -145,12 +145,12 @@ body {
   }
 
  main .welcome {
-  width: 300px;
+  width: 260px;
   position: absolute;
   top: 20%;
-  left: 52vw;
+  left: 50vw;
   transform: translate(-50%, -50%);
-  font-size: 1rem;
+  font-size: 13px;
 }
 }
 
@@ -457,20 +457,21 @@ body {
     transform: translate3d(-200px, 0px, 0px);
   }
 
-  .sections-mobile.b {
+
+ .sections-mobile.b {
     opacity: 0;
     -moz-transition: all 1000ms linear;
     -webkit-transition: all 1000ms linear;
     -o-transition: all 1000ms linear;
     transition: all 1000ms linear;
-    -moz-transform: translate3d(200px, 0px, 0px);
-    -webkit-transform: translate3d(200px, 0px, 0px);
-    -o-transform: translate(200px, 0px);
-    -ms-transform: translate(200px, 0px);
-    transform: translate3d(200px, 0px, 0px);
+    -moz-transform: translate3d(0px, 200px, 0px);
+    -webkit-transform: translate3d(0px, 200px, 0px);
+    -o-transform: translate(0px, 200px);
+    -ms-transform: translate(0px, 200px);
+    transform: translate3d(0px, 200px, 0px);
   }
 
-  .sections-mobile.in-view {
+    .sections-mobile.in-view {
     opacity: 1;
     -moz-transform: translate3d(0px, 0px, 0px);
     -webkit-transform: translate3d(0px, 0px, 0px);
