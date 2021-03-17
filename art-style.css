@@ -12,7 +12,6 @@
     grid-gap: 1.5rem;
 }
 
-
 .img-container{
     overflow: hidden;
 }
@@ -79,7 +78,6 @@
     height: 5vh;
 }
 
-
 nav {
     display: flex;
     justify-content: space-around;
@@ -96,8 +94,6 @@ nav {
     font-weight: 900;
     text-decoration: none;
 }
-
-
 
 .nav-links {
     display: flex;
@@ -130,20 +126,36 @@ nav {
     transition: all 0.3s ease;
 }
 
+/* SMALLER SCREEN TEXT ON IMG TRIGGER */
 @media screen and (max-width: 1400px) {
-    .modal h1{
+    .modal h1 {
         color: white;
-        font-size: 2rem;
+        font-size: 1.5rem;
         position: absolute;
         bottom: 5%;
         left: 50%;
         transform: translate(-50%, 90%);
     }
         
-    .modal p{
+    .modal p {
         opacity: 0;
     }
+}
 
+/* MOBILE SCREEN TEXT ON IMG TRIGGER */
+@media screen and (max-width: 900px) {
+    .modal h1 {
+        color: white;
+        font-size: 1.5rem;
+        position: absolute;
+        bottom: 7%;
+        left: 50%;
+        transform: translate(-50%, 90%);
+    }
+        
+    .modal p {
+        opacity: 0;
+    }
 }
 
 @media screen and (max-width: 1360px) {
@@ -186,42 +198,44 @@ nav {
     .nav-links a {
         text-shadow: white 0px 0px 10px;
     }
+
     .nav-links li {
         opacity: 0;
     }
-    .burger{
+
+    .burger {
         display: block;
     }
 
-.nav-active {
-    transform: translateX(0%);
-}
+    .nav-active {
+        transform: translateX(0%);
+    }
 
-@keyframes navLinkFade{
-    from{
+    @keyframes navLinkFade{
+        from {
+            opacity: 0;
+            transform: translateX(-50%);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(15px);
+        }
+    }
+
+    /* BURGER ICON ANIMATION */
+    .toggle .line1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+    .toggle .line2 {
         opacity: 0;
-        transform: translateX(-50%);
     }
-    to{
-        opacity: 1;
-        transform: translateX(15px);
+    .toggle .line3 {
+        transform: rotate(45deg) translate(-5px, -6px);
     }
 }
 
-.toggle .line1{
-    transform: rotate(-45deg) translate(-5px, 6px);
-}
-.toggle .line2{
-    opacity: 0;
-}
-.toggle .line3{
-    transform: rotate(45deg) translate(-5px, -6px);
-}
-}
-
-footer{
+footer {
     text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
-
 }

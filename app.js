@@ -1,14 +1,10 @@
-
-
 gsap.registerPlugin(MotionPathPlugin);
 gsap.registerPlugin(ScrollTrigger);
 
-
+// DEFAULT SETTINGS
 ScrollTrigger.defaults({
-  // Defaults are used by all ScrollTriggers
-  toggleActions: "play none reverse none", // Scoll effect Forward, Leave, Back, Back Leave
-  markers: false, // Easaly remove markers for production.
-
+  toggleActions: "play none reverse none", // FORWARD, LEAVE, BACK, LEAVE
+  markers: false, // MARKERS FOR DEBUGGING
 });
 
 const timelineHeader = gsap.timeline({
@@ -19,12 +15,9 @@ const timelineHeader = gsap.timeline({
     start: "top top", // Start at top of Trigger and at the top of the viewport
     end: "+=500% 0px", // The element is 500px hight and end 50px from the top of the viewport
     pin: true, // Pin the element true or false
-
   } });
 
-
 timelineHeader.
-
 to(".girl-fading", {
   opacity: 0,
   scale: 3  },
@@ -44,12 +37,10 @@ scale: 3},
 "after")
 .to(".art", {
   y:100
-})
+});
+
 
 let container = document.getElementById("container");
-// let containerMobile = document.getElementById("container-mobile");
-console.log(container.scrollWidth - document.documentElement.clientWidth)
-
 
 if(window.innerWidth > 800){
   gsap.to(container, {
@@ -64,20 +55,7 @@ if(window.innerWidth > 800){
       end: () => "+=400% 0px"
     }
   })
-}else{
-  
 }
-
-
-
-
-
-
-
-console.log("HEIGHT " + window.innerHeight);
-console.log("WIDTH " + window.innerWidth);
-
-
 
 
 placeholder_input_one = document.querySelector('.contact-name');
@@ -125,8 +103,6 @@ placeholder_input_four.onchange = function() {
   }  
 }
 
-
-
 /*Interactivity to determine when an animated element in in view. In view elements trigger our animation*/
 $(document).ready(function() {
 
@@ -157,7 +133,6 @@ $(document).ready(function() {
         element.removeClass('in-view');
       }
     });
-
   }
 
   //on or scroll, detect elements in view
@@ -168,3 +143,6 @@ $(document).ready(function() {
   $(window).trigger('scroll');
 
 });
+
+console.log("WINDOW HEIGHT " + window.innerHeight);
+console.log("WINDOW WIDTH " + window.innerWidth);
