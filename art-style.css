@@ -238,7 +238,7 @@ nav {
         }
         to {
             opacity: 1;
-            transform: translateX(15px);
+            transform: translateX(11%);
         }
     }
 
