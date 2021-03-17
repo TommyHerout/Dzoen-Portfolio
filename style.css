@@ -216,7 +216,7 @@ body {
 @media screen and (max-width: 1700px){
   
   .animation .art {
-    top: 7%;
+    top: 9%;
     left: 0;
     width: 40vw;
     height: 40vw;
@@ -226,12 +226,12 @@ body {
   }
   
   .animation .art-des {
-    top: 7%;
+    top: 9%;
     left: 0;
     z-index: 1;
-    width: 40vw;
+    width: 60vw;
     height: 40vw;
-    margin: 0 calc(100vw / 10 * 3);
+    margin: 0 calc(100vw / 15 * 3);
     position: absolute;
     opacity: 0;
   }
@@ -247,7 +247,7 @@ body {
   }
 }
 
-@media screen and (max-width: 1500px){
+@media screen and (max-width: 1300px){
   
   .animation .girl-fading {
     top: 0;
@@ -260,56 +260,22 @@ body {
   }
 
   .animation .art-des {
-    top: 7%;
+    top: 9%;
     left: 0;
     z-index: 1;
-    width: 50vw;
-    height: 50vw;
-    margin: 0 calc(100vw / 12 * 3);
+    width: 60vw;
+    height: 40vw;
+    margin: 0 calc(100vw / 16 * 3);
     position: absolute;
     opacity: 0;
   }
 
   .animation .art {
-    top: 7%;
+    top: 9%;
     left: 0;
     width: 40vw;
     height: 40vw;
     margin: 0 calc(100vw / 10 * 3);
-    position: absolute;
-    opacity: 0;
-  }
-}
-
-@media screen and (max-width: 1200px){
-  
-  .animation .girl-fading {
-    top: 0;
-    left: 0;
-    z-index: 1;
-    width: 80vw;
-    height: 80vw;
-    margin: 0 calc(100vw / 40 * 3);
-    position: absolute;
-  }
-  
-  .animation .art-des {
-    top: 200px;
-    left: 0;
-    z-index: 1;
-    width: 50vw;
-    height: 50vw;
-    margin: 0 calc(100vw / 12 * 3);
-    position: absolute;
-    opacity: 0;
-  }
-
-  .animation .art {
-    top: 150px;
-    left: 0;
-    width: 60vw;
-    height: 60vw;
-    margin: 0 calc(100vw / 15 * 3);
     position: absolute;
     opacity: 0;
   }
@@ -359,6 +325,40 @@ body {
 
   main {
     height: 100vh;
+  }
+}
+
+@media screen and (max-width: 321px){
+  
+  .animation .girl-fading {
+    top: 150px;
+    left: -12%;
+    z-index: 1;
+    width: 120vw;
+    height: 120vw;
+    margin: 0 calc(100vw / 1000 * 3);
+    position: absolute;
+  }
+
+  .animation .art-des {
+    top: 150px;
+    left: -2%;
+    z-index: 1;
+    width: 100vw;
+    height: 80vw;
+    margin: 0 calc(100vw / 1000 * 3);
+    position: absolute;
+    opacity: 0;
+  }
+
+  .animation .art {
+    top: 100px;
+    left: -4%;
+    width: 100vw;
+    height: 100vw;
+    margin: 0 calc(100vw / 40 * 3);
+    position: absolute;
+    opacity: 0;
   }
 }
 
