@@ -7,11 +7,22 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="./style.css" />
     <title>Johana Rubešová</title>
   </head>
 
   <body>
+    <div class="loader-wrapper">
+      <div class="box">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+      </div>
+    </div>
     <main>
       <div class="welcome">
         <h1 class="anim1">Johana Rubešová</h1>
@@ -182,6 +193,21 @@
         gsap.from('.sharlota', {duration: 3, x: 200, opacity: 0})
         gsap.from('.amco', {opacity: 0, duration: 3})
     </script>
+
+
+    <script>
+
+      const body = document.querySelector('body');
+
+      $(window).on("load", function(){
+          $(".loader-wrapper").fadeOut("slow");
+          body.classList.remove('u-fullScreen');
+          console.log("LOADED")
+      })
+      body.classList.add('u-fullScreen');
+      console.log("UNLOADED")
+
+  </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenLite.min.js" integrity="sha512-pvDW4tehKKsohH97164HwKwRGFpzayEFWTVbk8HuUoLIQ7Jp+WLN5XYokVuoCj2aT6dy8ihbW8SRTG1k0W4mSQ==" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TimelineLite.min.js" integrity="sha512-tSIDeirKC6suYILHqqPuZH3s0MvD4a5vCHXhBIcdmq4gQXZ2IB3fEYA5x2f3D2p/CbSqzKEvuTEVbS5VZ2u+ew==" crossorigin="anonymous"></script>

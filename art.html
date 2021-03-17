@@ -7,12 +7,23 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <link rel="stylesheet" href="art-style.css" />
         <title>Johana Rubešová - Art</title>
     </head>
 
     <body>
-        <nav>
+        <div class="loader-wrapper">
+            <div class="box">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <nav id="navbar">
             <div class="logo">
                 <a href="index.html"><h4>Johana Rubešová</h4></a>
             </div>
@@ -268,6 +279,55 @@
         <footer>
             <p>© 2021 Johana Rubešová</p>
         </footer>
+
+        <!-- <script>
+
+            // function noScroll() {
+            // window.scrollTo(0, 0);
+            // }
+
+            // $(document).ready(function() {
+            // //code here
+            // function show_popup(){
+            //     $(".loader-wrapper").fadeOut("slow");
+                
+            //     window.removeEventListener('scroll', noScroll);
+            // };
+            // window.addEventListener('scroll', noScroll);
+            // // window.setTimeout( show_popup, 3000 );
+            // });
+
+
+
+            function noScroll() {
+            window.scrollTo(0, 0);
+            }
+
+            $(window).on("load", function(){
+                function show_popup(){
+                $(".loader-wrapper").fadeOut("slow");
+                window.removeEventListener('scroll', noScroll);
+            };
+            window.addEventListener('scroll', noScroll);
+            window.setTimeout( show_popup, 3000 );
+            
+            // window.removeEventListener('scroll', noScroll);
+            })
+        </script> -->
+
+        <script>
+
+            const body = document.querySelector('body');
+      
+            $(window).on("load", function(){
+                $(".loader-wrapper").fadeOut("slow");
+                body.classList.remove('u-fullScreen');
+                console.log("LOADED")
+            })
+            body.classList.add('u-fullScreen');
+            console.log("UNLOADED")
+      
+        </script>
 
         <script src="./art.js"></script>
     </body>

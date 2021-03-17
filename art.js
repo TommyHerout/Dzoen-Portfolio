@@ -52,3 +52,4 @@ const navSlide = () => {
 }
 
 navSlide();
+
