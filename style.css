@@ -12,6 +12,7 @@ body {
   display: grid;
   overflow-x: hidden !important;
   width: 100%;
+  height: -webkit-fill-available;
 }
 
  main {
