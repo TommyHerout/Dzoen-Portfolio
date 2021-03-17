@@ -95,7 +95,7 @@ placeholder_label_four = document.querySelector('.four > span');
 
 placeholder_input_one.onchange = function() {
   if (placeholder_input_one.value !== '') {
-      placeholder_label_one.style.transform = 'translateY(-350%)' ;
+      placeholder_label_one.style.transform = 'translate(5vw,-300%)' ;
   } else {
       placeholder_label_one.style.transform = '';
   }  
@@ -103,7 +103,7 @@ placeholder_input_one.onchange = function() {
 
 placeholder_input_two.onchange = function() {
   if (placeholder_input_two.value !== '') {
-      placeholder_label_two.style.transform = 'translateY(-350%)' ;
+      placeholder_label_two.style.transform = 'translate(5vw,-300%)' ;
   } else {
       placeholder_label_two.style.transform = '';
   }  
@@ -111,7 +111,7 @@ placeholder_input_two.onchange = function() {
 
 placeholder_input_three.onchange = function() {
   if (placeholder_input_three.value !== '') {
-      placeholder_label_three.style.transform = 'translateY(-350%)' ;
+      placeholder_label_three.style.transform = 'translate(5vw,-300%)' ;
   } else {
       placeholder_label_three.style.transform = '';
   }  
@@ -119,7 +119,7 @@ placeholder_input_three.onchange = function() {
 
 placeholder_input_four.onchange = function() {
   if (placeholder_input_four.value !== '') {
-      placeholder_label_four.style.transform = 'translateY(-570%)' ;
+      placeholder_label_four.style.transform = 'translate(5vw,-400%)' ;
   } else {
       placeholder_label_four.style.transform = '';
   }  

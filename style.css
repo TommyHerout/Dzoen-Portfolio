@@ -770,7 +770,7 @@ span {
 }
 
 .four:focus-within .content-message {
-  transform: translate(5vw,-500%);
+  transform: translate(5vw,-400%);
 }
 
 .form{
@@ -787,7 +787,7 @@ span {
   transition: 0.5s;
   position: absolute;
   left: 50%;
-  top: 55%;
+  top: 52%;
   transform: translateX(-50%);
 
 }
@@ -837,6 +837,13 @@ span {
   display: none;
 }
 
+.mail-mobile-icon{
+  display: none;
+}
+
+
+
+
 @media screen and (max-width: 1600px) {
   .about-me-pic img {
     transform: translate(-60%, -100%);
@@ -871,17 +878,21 @@ span {
   }
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1200px)  {
   .about-me-pic img {
     width: 200px;
     position: absolute;
-    top: 22%;
+    top: 40%;
     left: 68%;
    
   }
 
   .contact-me h1{
     display: none;
+  }
+
+  .contact-me{
+    padding: 0;
   }
 
   .about-me .h2-pc {
@@ -897,7 +908,6 @@ span {
 
   .about-me h2{
     position: absolute;
-    left: 22%;
   }
 
   .about-me-two{
@@ -925,50 +935,85 @@ span {
   .contact-form {
     width: 100%;
     max-width: 60vw;
-    height: 100vh;
+    height: 60vh;
     border-radius: 10px;
     box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   }
 
-  .form .one, .two, .three, .four {
-    transform: translate(15vw, 40%);
-    width: 100px;
+
+  .form .contact-form-button {
+  display: none;
   }
 
-  .contact-form-button {
-    border: 0;
-    background: rgb(182, 160, 145);
-    color: white;
+  .form{display: none;}
 
-    border-radius: 20px;
-    cursor: pointer;
-    transition: 0.5s;
-    
-    left: 50%;
-    bottom: 3%;
-    position: absolute;
-    transform: translate(-50% , -50%)
-  }
 
-  .contact-name,
-.contact-surname,
-.contact-email,
-.contact-message {
-  display: block;
-  width: 30vw;
-  box-sizing: border-box;
-  margin: 16px 0;
-  padding-top: 40px;
-  outline: none;
-  border: 0;
-  border-bottom: 1px solid silver;
-  position: relative;
-  resize: none;
+.social-media{
+  text-align: center;
+  margin-top: 0;
+}
+
+.more {
+  margin-bottom: 20px;
+}
+
+.mail-mobile-icon{
+display: block;
+}
+
+.mail-mobile{
+  position: absolute;
+  width: 80px;
+  position: absolute;
+  bottom: 20vw;
+  left: 50%;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
 }
 
 
+}
+
+
+@media screen and (max-width: 900px)  {
+
+  .about-me-pic img {
+    display: none;
+  }
+
+  .about-me{
+    position: absolute;
+    width: 50%;
+  }
+
+  .about-me p, h2{
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+  }
+
+  .mail-mobile{
+    position: absolute;
+    width: 60px;
+    position: absolute;
+    bottom: 20vw;
+    left: 50%;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+  }
+
+  .contact-form {
+    width: 100%;
+    max-width: 80vw;
+    height: 60vh;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  }
 }
 
 footer{
@@ -976,3 +1021,4 @@ footer{
   padding-top: 20px;
   padding-bottom: 20px;
 }
+
