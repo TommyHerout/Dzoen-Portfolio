@@ -920,8 +920,11 @@ span {
 
   
 .about-me .about-me-one{
-  transform: translate(4vw, 15vh);
-  width: 50%;
+  /* transform: translate(4vw, 15vh); */
+  position: absolute;
+  top: 25%;
+  left: 22%;
+  width: 300px;
 
 }
 
@@ -988,18 +991,31 @@ display: block;
     width: 50%;
   }
 
-  .about-me p, h2{
+   .contact-form .about-me .h2-mobile{
+    display: none;
+  }
 
+  .contact-me h1{
+    display: block;
     position: absolute;
-    left: 50%;
-    top: 50%;
+    top: 15%;
+    z-index: 9999;
+    width: 200px;
+  }
+
+  .about-me .about-me-one{
+    left: 30%;
+    top: 5vh;
+    width: 100%;
+    
+  
   }
 
   .mail-mobile{
     position: absolute;
-    width: 60px;
+    width: 80px;
     position: absolute;
-    bottom: 20vw;
+    bottom: 30vw;
     left: 50%;
     z-index: 9999;
     transform: translate(-50%, -50%);
@@ -1015,6 +1031,29 @@ display: block;
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   }
 }
+
+@media screen and (max-width: 500px)  {
+
+  .about-me .about-me-one{
+    left: 30%;
+    top: 0;
+    width: 100%;
+    
+  
+  }
+
+  .mail-mobile{
+    position: absolute;
+    width: 60px;
+    position: absolute;
+    bottom: 42vw;
+    left: 50%;
+   
+    transform: translate(-50%, -50%);
+  }
+
+}
+
 
 footer{
   text-align: center;
