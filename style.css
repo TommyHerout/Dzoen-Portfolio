@@ -1000,7 +1000,8 @@ display: block;
     position: absolute;
     top: 15%;
     z-index: 9999;
-    width: 200px;
+    width: 211px;
+    text-align: center;
   }
 
   .about-me .about-me-one{
@@ -1046,8 +1047,37 @@ display: block;
     position: absolute;
     width: 60px;
     position: absolute;
-    bottom: 42vw;
+    bottom: 35vw;
     left: 50%;
+   
+    transform: translate(-50%, -50%);
+  }
+
+}
+
+@media screen and (max-height: 787px)  {
+
+  .mail-mobile{
+    position: absolute;
+    width: 60px;
+    position: absolute;
+    bottom: 35vw;
+    left: 50%;
+   
+    transform: translate(-50%, -50%);
+  }
+
+}
+
+@media screen and (max-height: 752px)  {
+
+  .mail-mobile{
+    position: absolute;
+    width: 60px;
+    position: absolute;
+    bottom: 10vw;
+    left: 50%;
+    background-color: transparent;
    
     transform: translate(-50%, -50%);
   }
