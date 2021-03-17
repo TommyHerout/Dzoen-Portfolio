@@ -58,8 +58,8 @@ if(window.innerWidth > 800){
     scrollTrigger: {
       trigger: container,
       invalidateOnRefresh: true,
-      // pin: true,
-      // scrub: 2,
+      pin: true,
+      scrub: 2,
       markers: false,
       end: () => "+=400% 0px"
     }
