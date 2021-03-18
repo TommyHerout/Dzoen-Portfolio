@@ -22,7 +22,7 @@ previews.forEach(preview => {
 
 
 modal.addEventListener("click", (e) => {
-    if(e.target.classList.contains('modal')) {
+    if(e.target.classList.contains('modal') || e.target.classList.contains('close')) {
         modal.classList.remove("open");
     }
 });

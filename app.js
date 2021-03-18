@@ -156,7 +156,7 @@ $(document).ready(function () {
     var surname = $('.contact-surname').val();
     var email = $('.contact-email').val();
     var message = $('.contact-message').val();
-    var pattern = /^\b[A-Z0-9._%-]+@[A-Z0-9.-]+\.[A-Z]{2,4}\b$/i
+    var emailPattern = /^\b[A-Z0-9._%-]+@[A-Z0-9.-]+\.[A-Z]{2,4}\b$/i;
 
     if(firstName.length <= 2) {
       Swal.fire({
@@ -200,7 +200,7 @@ $(document).ready(function () {
       })
       event.preventDefault()
 
-    }else if (!pattern.test(email)) {
+    }else if (!emailPattern.test(email)) {
 
       Swal.fire({
         icon: 'error',
