@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: rgba(248,248,245,255);
   scroll-behavior: smooth;
 }
 
@@ -14,6 +13,7 @@ body {
   overflow-x: hidden !important;
   width: 100%;
   height: -webkit-fill-available;
+  background-color: rgba(248,248,245,255);
   
 }
 
@@ -567,6 +567,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: rgba(248,248,245,255);
 }
 
 .contact-me-mobile{
@@ -584,6 +585,7 @@ body {
 
 .form .one, .two, .three, .four {
   transform: translateY(50%);
+  
 }
 
 .contact-form {
@@ -594,6 +596,7 @@ body {
   box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  background-color: rgba(248,248,245,255);
 }
 
 /* span {
@@ -615,6 +618,7 @@ body {
   position: relative;
   resize: none;
   margin-left: 17%;
+  background-color: rgba(248,248,245,255);
 }
 
 .content-first-name,
@@ -644,6 +648,7 @@ body {
 
 .form{
   position: relative;
+  background-color: rgba(248,248,245,255);
 }
 
 .form .contact-form-button {
@@ -674,6 +679,10 @@ body {
   margin-right: 25px;
 }
 
+.about-me{
+  background-color: rgba(248,248,245,255);
+}
+
 .about-me h2 {
   transform: translate(4vw, 4vh);
   font-size: 2rem;
@@ -692,7 +701,7 @@ body {
 .about-me-pic img {
   transform: translate(-50%, -25%);
   position: relative;
-  z-index: 9999;
+  z-index: 500;
   width: 300px;
 }
 
@@ -713,7 +722,7 @@ body {
   .about-me-pic img {
     transform: translate(-60%, -100%);
     position: relative;
-    z-index: 9999;
+    z-index: 500;
     width: 320px;
   }
 
@@ -738,7 +747,7 @@ body {
   .about-me-pic img {
     transform: translate(-55%, -50%);
     position: relative;
-    z-index: 9999;
+    z-index: 500;
     width: 250px;
   }
 }
