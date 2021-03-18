@@ -14,6 +14,7 @@ body {
   overflow-x: hidden !important;
   width: 100%;
   height: -webkit-fill-available;
+  
 }
 
  main {
@@ -946,6 +947,7 @@ footer {
   justify-content: center;
   align-items: center;
   z-index: 9999;
+  
 }
 
 .box{
@@ -955,8 +957,8 @@ footer {
 }
 
 .box span{
-width:10px;
-height:10px;
+width:15px;
+height:15px;
 border-radius:50%;
 /* margin: 0px; */
 animation:Loading 1.6s ease-in-out infinite;
@@ -965,13 +967,14 @@ transform-origin:center;
 margin: 20px;
 background-color: transparent;
 }
+
 .box span:first-of-type{
 background-color:rgba(255, 255, 255, 0.675);
 animation-delay:0s;
 
 }
 .box span:nth-of-type(2){
-background-color:rgba(0, 0, 0, 0.575);
+background-color:rgba(0, 0, 0, 0.705);
 animation-delay:.2s;
 
 }
@@ -981,7 +984,7 @@ animation-delay:.4s;
 
 }
 .box span:nth-of-type(4){
-  background-color:rgba(0, 0, 0, 0.575);
+  background-color:rgba(0, 0, 0, 0.705);
 animation-delay:.6s;
 
 }
@@ -991,7 +994,7 @@ animation-delay:.8s;
 
 }
 .box span:last-of-type{
-  background-color:rgba(0, 0, 0, 0.575);
+  background-color:rgba(0, 0, 0, 0.705);
 animation-delay:1s;
 }
 
@@ -1001,8 +1004,21 @@ animation-delay:1s;
   transform:scale(1);	
 }
 20%{
-  transform:scale(5);	
+  transform: translate3d( 0, -50px, 0);
 }
+}
+
+@media screen and (max-width: 800px) {
+  .box span{
+    width:7px;
+    height:7px;
+    border-radius:50%;
+    animation:Loading 1.6s ease-in-out infinite;
+    transform-style:preserve-3d;
+    transform-origin:center;
+    margin: 10px;
+    background-color: transparent;
+    }
 }
 
 .u-fullScreen {
