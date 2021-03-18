@@ -984,28 +984,36 @@ animation-delay:0s;
 }
 .box span:nth-of-type(2){
 background-color:rgba(0, 0, 0, 0.705);
-animation-delay:.2s;
+animation-delay:.1s;
 
 }
 .box span:nth-of-type(3){
 background-color:rgba(255, 255, 255, 0.675);
-animation-delay:.4s;
+animation-delay:.2s;
 
 }
 .box span:nth-of-type(4){
   background-color:rgba(0, 0, 0, 0.705);
-animation-delay:.6s;
+animation-delay:.3s;
 
 }
 .box span:nth-of-type(5){
 background-color:rgba(255, 255, 255, 0.675);
-animation-delay:.8s;
+animation-delay:.4s;
+
+}
+
+.box span:nth-of-type(6){
+  background-color:rgba(0, 0, 0, 0.705);
+animation-delay:.5s;
 
 }
 .box span:last-of-type{
-  background-color:rgba(0, 0, 0, 0.705);
-animation-delay:1s;
+
+  background-color:rgba(255, 255, 255, 0.675);
+animation-delay:.6s;
 }
+
 
 @keyframes Loading{
 
@@ -1013,7 +1021,7 @@ animation-delay:1s;
   transform:scale(1);	
 }
 20%{
-  transform: translate3d( 0, -50px, 0);
+  transform: translate3d( 0, -100px, 0);
 }
 }
 
@@ -1028,6 +1036,21 @@ animation-delay:1s;
     margin: 10px;
     background-color: transparent;
     }
+
+    .box span:last-of-type{
+
+      display: none;
+    }
+
+    @keyframes Loading{
+
+      0%, 40%, 100%{
+        transform:scale(1);	
+      }
+      20%{
+        transform: translate3d( 0, -50px, 0);
+      }
+      }
 }
 
 .u-fullScreen {
