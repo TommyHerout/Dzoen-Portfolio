@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js" integrity="sha512-3j3VU6WC5rPQB4Ld1jnLV7Kd5xr+cq9avvhwqzbH/taCRNURoeEpoPBK9pDyeukwSxwRPJ8fDgvYXd6SkaZ2TA==" crossorigin="anonymous"></script>
 
   <link rel="stylesheet" href="./style.css" />
   <title>Johana Rubešová</title>
@@ -128,7 +129,8 @@
     </div>
   </div>
 
-  <div class="contact-me">
+
+  <div id="hello" class="contact-me">
     <h1>Let's talk</h1>
     <form class="contact-form" action="https://formspree.io/f/xgepgjdw" method="POST"> <!-- https://formspree.io/f/xgepgjdw -->
       <div class="about-me">
@@ -183,7 +185,7 @@
   </div>
 
   <div class="social-media">
-    <a href="https://www.twitter.com"><img src="img/social-media/twitter-32.ico" height="25" width="25"
+    <a href="./design.html#first"><img src="img/social-media/twitter-32.ico" height="25" width="25"
         class="logo"></a>
     <a href="https://www.instagram.com"><img src="img/social-media/instagram.png" height="25" width="25"
         class="logo"></a>
@@ -193,7 +195,7 @@
         class="logo"></a>
   </div>
 
-  <footer>
+  <footer data-id="hi">
     <p>© 2021 Johana Rubešová</p>
   </footer>
 

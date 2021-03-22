@@ -25,8 +25,15 @@ const navSlide = () => {
 navSlide();
 
 
-const logo = document.querySelectorAll('#logo path');
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-60px";
+  }
+  prevScrollpos = currentScrollPos;
+} 
 
-for(let i = 0; i < logo.length; i++){
-    console.log(`Letter ${i} is ${logo[i].getTotalLength()}`);
-}
+

@@ -8,10 +8,11 @@
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="design.css" />
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js" integrity="sha512-3j3VU6WC5rPQB4Ld1jnLV7Kd5xr+cq9avvhwqzbH/taCRNURoeEpoPBK9pDyeukwSxwRPJ8fDgvYXd6SkaZ2TA==" crossorigin="anonymous"></script>
         <title>Johana Rubešová - Art Design</title>
     </head>
 <body>
-    <!-- <div class="loader-wrapper">
+    <div class="loader-wrapper">
         <div class="box">
             <span></span>
             <span></span>
@@ -19,15 +20,16 @@
             <span></span>
             <span></span>
             <span></span>
+            <span></span>
         </div>
-    </div> -->
+    </div>
     <nav id="navbar">
         <div class="logo">
-            <a href="index.html"><h4>Johana Rubešová</h4></a>
+            <a href="main.html"><h4>Johana Rubešová</h4></a>
         </div>
         <ul class="nav-links">
             <li>
-                <a href="/index.html">CONTACT</a>
+                <a class="test" href="./main.html#contact">CONTACT</a>
             </li>
             <li>
                 <a href="/art.html">ILLUSTRATIONS</a>
@@ -53,6 +55,22 @@
         </p>
         <img class="welcome-img" src="img/art-design/6.PNG">
     </div>
+
+    <div id="first" class="one" style="height: 100vh">
+        <p>ONE</p>
+    </div>
+
+    <div class="tw" style="height: 100vh">
+        <p>TWO</p>
+    </div>
+
+    <div class="th" style="height: 100vh">
+        <p>THREE</p>
+    </div>
+
+    <div class="fr" style="height: 100vh">
+        <p>FOUR</p>
+    </div>
         
 
     <script>
@@ -64,20 +82,6 @@
         })
         body.classList.add('u-fullScreen');
     </script>
-
-    <script>
-    var prevScrollpos = window.pageYOffset;
-    window.onscroll = function() {
-    var currentScrollPos = window.pageYOffset;
-      if (prevScrollpos > currentScrollPos) {
-        document.getElementById("navbar").style.top = "0";
-      } else {
-        document.getElementById("navbar").style.top = "-60px";
-      }
-      prevScrollpos = currentScrollPos;
-    }
-    </script>
-    
 
     <script src="./design.js"></script>
 </body>

@@ -9,7 +9,6 @@ ScrollTrigger.defaults({
 
 const timelineHeader = gsap.timeline({
   scrollTrigger: {
-    id: "ZOOM", // Custom label to the marker
     trigger: ".animation", // What element triggers the scroll
     scrub: true, // Add a small delay of scrolling and animation. `true` is direct
     start: "top top", // Start at top of Trigger and at the top of the viewport
@@ -228,6 +227,14 @@ $(document).ready(function () {
     }
   })
 })
+
+
+$(document).ready(function() {
+  if (window.location.href.indexOf("contact") > -1) {
+    $("html, body").animate({ scrollTop: $(document).height() }, 1000);
+  }
+});
+
 
 console.log("WINDOW HEIGHT " + window.innerHeight);
 console.log("WINDOW WIDTH " + window.innerWidth);
