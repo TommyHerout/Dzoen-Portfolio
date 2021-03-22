@@ -11,7 +11,7 @@
         <title>Johana Rubešová - Art Design</title>
     </head>
 <body>
-    <div class="loader-wrapper">
+    <!-- <div class="loader-wrapper">
         <div class="box">
             <span></span>
             <span></span>
@@ -20,7 +20,7 @@
             <span></span>
             <span></span>
         </div>
-    </div>
+    </div> -->
     <nav id="navbar">
         <div class="logo">
             <a href="index.html"><h4>Johana Rubešová</h4></a>
@@ -45,29 +45,17 @@
             <div class="line3"></div>
         </div>
     </nav>
-
-    <!-- <script>
-        $(window).on("load", function(){
-            function show_popup(){
-            $(".loader-wrapper").fadeOut("slow");
-        };
-        window.setTimeout( show_popup, 3000 );
-        })
-    </script> -->
+        
 
     <script>
+        const body = document.querySelector('body');
 
-      const body = document.querySelector('body');
-
-      $(window).on("load", function(){
-          $(".loader-wrapper").fadeOut("slow");
-          body.classList.remove('u-fullScreen');
-          console.log("LOADED")
-      })
-      body.classList.add('u-fullScreen');
-      console.log("UNLOADED")
-
-  </script>
+        $(window).on("load", function () {
+            $(".loader-wrapper").fadeOut("slow");
+            body.classList.remove('u-fullScreen');
+        })
+        body.classList.add('u-fullScreen');
+    </script>
 
     <script src="./design.js"></script>
 </body>
