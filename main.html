@@ -185,7 +185,7 @@
   </div>
 
   <div class="social-media">
-    <a href="./design.html#first"><img src="img/social-media/twitter-32.ico" height="25" width="25"
+    <a href="https://www.twitter.com"><img src="img/social-media/twitter-32.ico" height="25" width="25"
         class="logo"></a>
     <a href="https://www.instagram.com"><img src="img/social-media/instagram.png" height="25" width="25"
         class="logo"></a>
@@ -216,6 +216,11 @@
       gsap.from('.sharlota', { duration: 3, x: 200, opacity: 0 })
       gsap.from('.amco', { opacity: 0, duration: 3 })
 
+      $(document).ready(function() {
+        if (window.location.href.indexOf("contact") > -1) {
+          $("html, body").animate({ scrollTop: $(document).height() }, 1000);
+        }
+      });
     });
 
     body.classList.add('u-fullScreen');

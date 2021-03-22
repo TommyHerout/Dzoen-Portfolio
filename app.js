@@ -229,11 +229,8 @@ $(document).ready(function () {
 })
 
 
-$(document).ready(function() {
-  if (window.location.href.indexOf("contact") > -1) {
-    $("html, body").animate({ scrollTop: $(document).height() }, 1000);
-  }
-});
+
+
 
 
 console.log("WINDOW HEIGHT " + window.innerHeight);
