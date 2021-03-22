@@ -7,10 +7,21 @@
 body, html {
     height: 100vh;
     width: 100%;
-    text-align: center;
-    background-color: rgba(248,248,245,255);
-    
 }
+
+#navbar {
+    background-color:rgb(182, 160, 145);
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+    transition: top 0.3s;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    z-index: 1;
+  }
 
 nav {
     display: flex;
@@ -207,4 +218,29 @@ nav {
 .u-fullScreen {
     overflow: hidden;
     height: 100%;
+}
+
+.welcome-text{
+    height: 100vh;
+    
+}
+
+.title {
+    position: absolute;
+    top: 40%;
+    left: 20%;
+}
+
+.under-welcome-paragraph {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  width: 500px;
+}
+
+.welcome-img{
+  width: 300px;
+  position: absolute;
+  right: 15%;
+  top: 27%;
 }

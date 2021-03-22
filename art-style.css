@@ -104,7 +104,6 @@
     position: fixed;
     top: 0;
     width: 100%;
-
     transition: top 0.3s;
     display: flex;
     justify-content: space-around;
@@ -113,14 +112,6 @@
     z-index: 1;
   }
 
-
-nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    min-height: 8vh;
-    background-color:rgb(182, 160, 145);
-}
 
 .logo a {
     color: rgb(0, 0, 0);
@@ -439,6 +430,7 @@ animation-delay:.6s;
   
   .welcome-text{
       height: 100vh;
+      
   }
 
   .title {

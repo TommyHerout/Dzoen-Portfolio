@@ -45,6 +45,14 @@
             <div class="line3"></div>
         </div>
     </nav>
+
+    <div class="welcome-text">
+        <h1 class="title">Art Design</h1>
+        <p class="under-welcome-paragraph">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi sit amet mauris commodo quis. Amet purus gravida quis blandit. Vitae congue eu consequat ac felis donec. Eleifend donec pretium vulputate sapien nec sagittis aliquam malesuada. Euismod in pellentesque massa placerat duis ultricies lacus sed. Nullam non nisi est sit amet facilisis magna etiam.
+        </p>
+        <img class="welcome-img" src="img/art-design/6.PNG">
+    </div>
         
 
     <script>
@@ -56,6 +64,20 @@
         })
         body.classList.add('u-fullScreen');
     </script>
+
+    <script>
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.getElementById("navbar").style.top = "0";
+      } else {
+        document.getElementById("navbar").style.top = "-60px";
+      }
+      prevScrollpos = currentScrollPos;
+    }
+    </script>
+    
 
     <script src="./design.js"></script>
 </body>
