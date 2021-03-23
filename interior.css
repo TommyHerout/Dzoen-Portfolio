@@ -19,7 +19,7 @@ body, html {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    min-height: 8vh;
+    min-height: 60px;
     z-index: 1;
   }
 
@@ -340,5 +340,5 @@ animation-delay:0s;
     position: absolute;
     transform: translate(-50%, -50%);
     top: 80vh;
-    
-}
+    box-shadow: 8px 8px 20px rgb(182, 160, 145);
+}   
