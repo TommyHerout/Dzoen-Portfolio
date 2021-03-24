@@ -297,8 +297,9 @@ animation-delay:0s;
     left: 30%;
     top: 45%;
     transform: translate(-50%, -50%);
-    width: 650px;
+    width: 630px;
 }
+
 
 .first-interior h1{
     position: absolute;
@@ -330,7 +331,9 @@ animation-delay:0s;
     gap: 40px;
 }
 
-.img-container{
+
+
+.img-container, .img-container2{
     overflow: hidden;
 }
 
@@ -346,31 +349,41 @@ animation-delay:0s;
     position: absolute;
     transform: translate(-50%, -50%);
     top: 80vh;
-    box-shadow: 8px 8px 20px rgb(151, 151, 151);
+    box-shadow: 8px 8px 20px rgba(151, 151, 151, 0.336);
 }
 
+.img-container2 img{
+    position: relative;
+    object-fit: cover;
+    transition: all 0.3s ease-out;
+    cursor: pointer;
+    position: absolute;
+    transform: translate(38vw, -50%);
+    top: 80vh;
+    box-shadow: 8px 8px 20px rgba(151, 151, 151, 0.336);
+}
 
 
 .second-interior .second-main{
     position: absolute;
     left: 70%;
-    top: 30%;
+    top: 45%;
     transform: translate(-50%, -50%);
-    width: 450px;
+    width: 630px;
 }
 
 
 .second-interior h1{
     position: absolute;
     left: 40%;
-    top: 20%;
+    top: 40%;
     transform: translate(-50%, -50%);
     width: 450px;
 }
 
 .second-interior p {
   position: absolute;
-  top: 35%;
+  top: 55%;
   left: 30%;
   width: 300px;
   transform: translate(-50%, -50%);
