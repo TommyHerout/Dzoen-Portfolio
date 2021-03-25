@@ -232,7 +232,7 @@
         position: absolute;
         left: 0px;
         height: 70vh;
-        top: 8vh;
+        top: 6vh;
         background-color: rgb(182, 160, 145);
         display: flex;
         flex-direction: column;
@@ -433,7 +433,7 @@ animation-delay:.6s;
       
   }
 
-  .title {
+  .main-title {
       position: absolute;
       top: 40%;
       left: 20%;
@@ -447,8 +447,70 @@ animation-delay:.6s;
 }
 
 .welcome-img{
-    width: 400px;
+    width: 500px;
     position: absolute;
-    right: 10%;
+    right: 15%;
     top: 30%;
+  }
+
+@media screen and (max-width: 1600px) {
+    .welcome-img{
+        width: 400px;
+        position: absolute;
+        right: 10%;
+        top: 35%;
+      }
+
+      
+.under-welcome-paragraph {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+    .welcome-img{
+        width: 300px;
+        position: absolute;
+        right: 10%;
+        top: 45%;
+      }
+
+      
+.under-welcome-paragraph {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    width: 300px;
+    font-size: 0.9rem;
+  }
+  
+  .main-title{
+    font-size: 1.7rem;
+}
+
+}
+
+@media screen and (max-width: 900px) {
+    .welcome-img{
+        display: none;
+      }
+
+      .main-title{
+          left: 50%;
+          top: 20%;
+          transform: translateX(-50%);
+      }
+      
+.under-welcome-paragraph {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    width: 200px;
+    transform: translateX(-50%);
+    font-size: 0.9rem;
+    text-align: center;
+  }
 }
