@@ -45,3 +45,9 @@ const navSlide = () => {
 }
 
 navSlide();
+
+
+
+
+console.log("WINDOW HEIGHT " + window.innerHeight);
+console.log("WINDOW WIDTH " + window.innerWidth);
