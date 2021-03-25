@@ -103,17 +103,19 @@ body.lb-disable-scrolling {
 }
 
 .lb-nav a.lb-prev {
-  width: 34%;
-  left: 0;
+  position: absolute;
+  width: 44%;
+  left: -20%;
   float: left;
   background: url(/img/lb-indicators/prev.png) left 48% no-repeat;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: opacity 0.6s;
   -moz-transition: opacity 0.6s;
   -o-transition: opacity 0.6s;
   transition: opacity 0.6s;
 }
+
 
 .lb-nav a.lb-prev:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
@@ -121,12 +123,13 @@ body.lb-disable-scrolling {
 }
 
 .lb-nav a.lb-next {
-  width: 64%;
-  right: 0;
+  position: absolute;
+  width: 44%;
+  right: -20%;
   float: right;
   background: url(/img/lb-indicators/next.png) right 48% no-repeat;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: opacity 0.6s;
   -moz-transition: opacity 0.6s;
   -o-transition: opacity 0.6s;
@@ -203,4 +206,37 @@ body.lb-disable-scrolling {
   cursor: pointer;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
+}
+
+
+@media screen and (max-width: 500px){
+  .lb-nav a.lb-prev {
+    position: absolute;
+    width: 20%;
+    left: 20%;
+    top: 70%;
+    float: left;
+    background: url(/img/lb-indicators/prev.png) left 48% no-repeat;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 1;
+    -webkit-transition: opacity 0.6s;
+    -moz-transition: opacity 0.6s;
+    -o-transition: opacity 0.6s;
+    transition: opacity 0.6s;
+  }
+  
+.lb-nav a.lb-next {
+  position: absolute;
+  width: 20%;
+  right: 20%;
+  top: 70%;
+  float: right;
+  background: url(/img/lb-indicators/next.png) right 48% no-repeat;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 1;
+  -webkit-transition: opacity 0.6s;
+  -moz-transition: opacity 0.6s;
+  -o-transition: opacity 0.6s;
+  transition: opacity 0.6s;
+}
 }
