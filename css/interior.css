@@ -309,7 +309,7 @@ animation-delay:0s;
     width: 450px;
 }
 
-.first-interior p {
+.first-interior .description {
   position: absolute;
   top: 55%;
   left: 70%;
@@ -317,11 +317,11 @@ animation-delay:0s;
   transform: translate(-50%, -50%);
 }   
 
-.first-gallery img, .second-gallery img{
+.left-gallery img, .right-gallery img{
     width: 150px;
 }
 
-.first-gallery, .second-gallery {
+.left-gallery, .right-gallery {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(120px, 3fr));
     align-items:center;
@@ -388,3 +388,11 @@ animation-delay:0s;
   width: 300px;
   transform: translate(-50%, -50%);
 }   
+
+.first-interior .btm-footer{
+    position: absolute;
+    left: 49.5%;
+    top: 96.5%;
+    transform: translate(-50%, -50%);
+
+}
