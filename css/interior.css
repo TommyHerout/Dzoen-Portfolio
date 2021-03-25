@@ -271,6 +271,7 @@ animation-delay:0s;
     position: absolute;
     top: 40%;
     left: 20%;
+    font-size: 2rem;
 }
 
 .under-welcome-paragraph {
@@ -281,10 +282,10 @@ animation-delay:0s;
 }
 
 .welcome-img{
-  width: 400px;
+  width: 500px;
   position: absolute;
   right: 15%;
-  top: 35%;
+  top: 30%;
 }
 
 .first-interior, .second-interior{
@@ -301,10 +302,10 @@ animation-delay:0s;
 }
 
 
-.first-interior h1{
+.first-interior .title{
     position: absolute;
     left: 80%;
-    top: 40%;
+    top: 36%;
     transform: translate(-50%, -50%);
     width: 450px;
 }
@@ -312,9 +313,10 @@ animation-delay:0s;
 .first-interior .description {
   position: absolute;
   top: 55%;
-  left: 70%;
+  left: 68%;
   width: 300px;
   transform: translate(-50%, -50%);
+  text-align: center;
 }   
 
 .left-gallery img, .right-gallery img{
@@ -349,7 +351,7 @@ animation-delay:0s;
     position: absolute;
     transform: translate(-50%, -50%);
     top: 80vh;
-    box-shadow: 8px 8px 20px rgba(151, 151, 151, 0.336);
+    box-shadow: 8px 8px 20px rgba(214, 200, 200, 0.37);
 }
 
 .img-container2 img{
@@ -360,7 +362,7 @@ animation-delay:0s;
     position: absolute;
     transform: translate(38vw, -50%);
     top: 80vh;
-    box-shadow: 8px 8px 20px rgba(151, 151, 151, 0.336);
+    box-shadow: 8px 8px 20px rgba(214, 200, 200, 0.37);
 }
 
 
@@ -373,20 +375,21 @@ animation-delay:0s;
 }
 
 
-.second-interior h1{
+.second-interior .title{
     position: absolute;
     left: 40%;
-    top: 40%;
+    top: 36%;
     transform: translate(-50%, -50%);
     width: 450px;
 }
 
-.second-interior p {
+.second-interior .description {
   position: absolute;
   top: 55%;
-  left: 30%;
+  left: 29%;
   width: 300px;
   transform: translate(-50%, -50%);
+  text-align: center;
 }   
 
 .first-interior .btm-footer{
