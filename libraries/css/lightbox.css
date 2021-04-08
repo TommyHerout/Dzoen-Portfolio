@@ -75,7 +75,7 @@ body.lb-disable-scrolling {
   width: 32px;
   height: 32px;
   margin: 0 auto;
-  background: url(/img/lb-indicators/loading.gif) no repeat;
+  background: url(/Dzoen-Portfolio/img/lb-indicators/loading.gif) no repeat;
 }
 
 .lb-nav {
@@ -107,7 +107,7 @@ body.lb-disable-scrolling {
   width: 44%;
   left: -20%;
   float: left;
-  background: url(/img/lb-indicators/prev.png) left 48% no-repeat;
+  background: url(/Dzoen-Portfolio/img/lb-indicators/prev.png) left 48% no-repeat;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 1;
   -webkit-transition: opacity 0.6s;
@@ -127,7 +127,7 @@ body.lb-disable-scrolling {
   width: 44%;
   right: -20%;
   float: right;
-  background: url(/img/lb-indicators/next.png) right 48% no-repeat;
+  background: url(/Dzoen-Portfolio/img/lb-indicators/next.png) right 48% no-repeat;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 1;
   -webkit-transition: opacity 0.6s;
@@ -191,7 +191,8 @@ body.lb-disable-scrolling {
   float: right;
   width: 30px;
   height: 30px;
-  background: url(/img/lb-indicators/close.png) top right no-repeat;
+  background: url(/Dzoen-Portfolio/img/lb-indicators/close.png) top right no-repeat;
+
   text-align: right;
   outline: none;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
@@ -216,7 +217,7 @@ body.lb-disable-scrolling {
     left: 20%;
     top: 70%;
     float: left;
-    background: url(/img/lb-indicators/prev.png) left 48% no-repeat;
+    background: url(/Dzoen-Portfolio/img/lb-indicators/prev.png) left 48% no-repeat;
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
     opacity: 1;
     -webkit-transition: opacity 0.6s;
@@ -231,7 +232,7 @@ body.lb-disable-scrolling {
   right: 20%;
   top: 70%;
   float: right;
-  background: url(/img/lb-indicators/next.png) right 48% no-repeat;
+  background: url(/Dzoen-Portfolio/img/lb-indicators/next.png) right 48% no-repeat;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 1;
   -webkit-transition: opacity 0.6s;
